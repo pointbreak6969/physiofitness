@@ -27,7 +27,7 @@ export default function CTABanner({ title, subtitle, buttonText, buttonHref }: C
       </div>
       <Link
         href={buttonHref}
-        className="relative inline-flex items-center gap-[8px] bg-brand-olive text-white rounded-full px-[22px] py-[12px] text-[13px] font-semibold hover:bg-[#5b614a] transition-colors flex-shrink-0"
+        className="relative inline-flex items-center gap-[8px] bg-brand-olive text-white rounded-full px-[22px] py-[12px] text-[13px] font-semibold hover:bg-[#56a326] transition-colors flex-shrink-0"
       >
         {buttonText}
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">

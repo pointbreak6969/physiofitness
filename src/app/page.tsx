@@ -65,16 +65,16 @@ const services = [
 ];
 
 const svcGradients = [
-  "from-[#3d8010] to-[#60b520]",   // green
-  "from-[#60b520] to-[#96d850]",   // green
-  "from-[#50a518] to-[#78cc30]",   // green
-  "from-[#60b520] to-[#007fda]",   // green → blue
-  "from-[#4a9c10] to-[#b8e880]",   // green
-  "from-[#007fda] to-[#60b520]",   // blue → green
-  "from-[#60b520] to-[#dcf5bc]",   // green
-  "from-[#0068b8] to-[#78cc30]",   // blue → green
-  "from-[#50a518] to-[#0070c4]",   // green → blue
-  "from-[#4a9c10] to-[#96d850]",   // green
+  "from-[#2f7929] to-[#7bc320]",   // green
+  "from-[#7bc320] to-[#9cdd15]",   // green
+  "from-[#56a326] to-[#9cdd15]",   // green
+  "from-[#7bc320] to-[#0e76c5]",   // green → blue
+  "from-[#2f7929] to-[#b1de5f]",   // green
+  "from-[#0e76c5] to-[#7bc320]",   // blue → green
+  "from-[#7bc320] to-[#b1de5f]",   // green
+  "from-[#06498b] to-[#9cdd15]",   // blue → green
+  "from-[#56a326] to-[#0e76c5]",   // green → blue
+  "from-[#2f7929] to-[#9cdd15]",   // green
 ];
 
 const team = [
@@ -87,12 +87,12 @@ const team = [
 ];
 
 const avatarGradients = [
-  "from-[#a8d878] to-[#3d8010]",   // green
-  "from-[#b3d8f5] to-[#007fda]",   // blue (secondary)
-  "from-[#dcf5bc] to-[#60b520]",   // green
-  "from-[#99caf0] to-[#60b520]",   // blue → green
-  "from-[#caf0a0] to-[#50a518]",   // green
-  "from-[#dcf5bc] to-[#007fda]",   // green → blue
+  "from-[#b1de5f] to-[#2f7929]",   // green
+  "from-[#b1de5f] to-[#0e76c5]",   // blue (secondary)
+  "from-[#b1de5f] to-[#7bc320]",   // green
+  "from-[#0e76c5] to-[#7bc320]",   // blue → green
+  "from-[#b1de5f] to-[#56a326]",   // green
+  "from-[#b1de5f] to-[#0e76c5]",   // green → blue
 ];
 
 const whyItems = [
@@ -150,10 +150,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div
               className="aspect-[4/3] rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
-              style={{ background: "radial-gradient(ellipse at 30% 40%, #dcf5bc 0%, #96d850 45%, #50a518 100%)" }}
+              style={{ background: "radial-gradient(ellipse at 30% 40%, #b1de5f 0%, #9cdd15 45%, #56a326 100%)" }}
             >
-              <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(26,58,10,.15) 100%)" }} />
-              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #b8e880, #4a9c10)", boxShadow: "inset 0 -10px 30px rgba(26,58,10,.25)" }} />
+              <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(23,57,19,.15) 100%)" }} />
+              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -10px 30px rgba(23,57,19,.25)" }} />
               <span className="absolute left-[18px] top-[18px] bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-[6px] rounded-full uppercase backdrop-blur-sm">
                 Our Clinic
               </span>
@@ -214,7 +214,7 @@ export default function HomePage() {
             <div className="p-7 sm:p-8">
               <h4 className="text-[18px] mb-2">Book an <span className="text-brand-olive">Appointment</span></h4>
               <p className="text-brand-sage text-[13px] mb-4">Our care team is one call away — schedule your visit in under a minute.</p>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-[22px] py-3 text-[13px] font-semibold hover:bg-[#5b614a] transition-colors">
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-[22px] py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
                 Call Now
               </Link>
@@ -245,9 +245,9 @@ export default function HomePage() {
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #a8d878, #007fda 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #b1de5f, #0e76c5 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b3d8f5, #007fda)", boxShadow: "inset 0 -20px 30px rgba(0,53,102,.2)" }} />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b1de5f, #0e76c5)", boxShadow: "inset 0 -20px 30px rgba(6,73,139,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
             </div>
           </div>

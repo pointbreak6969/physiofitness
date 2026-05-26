@@ -6,16 +6,16 @@
 
 /* ── Brand primitives (change these to re-theme) ──────────────────── */
 :root {
-  --brand-ink:    #1a3a0a;   /* dark green-black — headings & dark buttons  */
-  --brand-olive:  #60b520;   /* primary (60%) green — CTAs, active states  */
-  --brand-blue:   #007fda;   /* secondary (30%) blue — accents, gradients  */
-  --brand-green:  #4a9c10;   /* WhatsApp badge green                        */
-  --brand-sage:   #5a8040;   /* muted green — secondary text               */
-  --brand-mist:   #a8d878;   /* light green — subtle fills                 */
-  --brand-paper:  #f4faea;   /* page background                            */
-  --brand-paper2: #e8f5d4;   /* slightly darker bg variant                 */
-  --brand-line:   #cce8a8;   /* dividers / input borders                   */
-  --brand-footer: #0e2205;   /* footer dark bg                             */
+  --brand-ink:    #173913;   /* dark forest green — headings & dark buttons */
+  --brand-olive:  #7bc320;   /* primary green (#7bc320) — CTAs, active     */
+  --brand-blue:   #0e76c5;   /* secondary blue (#0e76c5) — accents         */
+  --brand-green:  #56a326;   /* WhatsApp badge (#56a326)                    */
+  --brand-sage:   #2f7929;   /* muted dark green — secondary text          */
+  --brand-mist:   #b1de5f;   /* light lime — subtle fills                  */
+  --brand-paper:  #f2fae4;   /* page background (derived light lime)        */
+  --brand-paper2: #e5f6cc;   /* slightly darker bg                         */
+  --brand-line:   #cde98a;   /* dividers / input borders                   */
+  --brand-footer: #0d1521;   /* darkest navy — footer bg                   */
 }
 
 /* ── shadcn semantic tokens mapped to brand ──────────────────────── */
