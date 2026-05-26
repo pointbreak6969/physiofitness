@@ -2,28 +2,28 @@ import PageBanner from "@/components/shared/PageBanner";
 
 const posts = [
   {
-    grad: "from-[#0070c4] to-[#b3d8f5]",
+    grad: "from-[#56a326] to-[#9cdd15]",   // green
     label: "Chronic Pain",
     date: "May 24, 2026",
     title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief",
     excerpt: "Chronic pain is one of the most complex healthcare challenges globally, affecting millions of people every year. Here's how a structured, multimodal physiotherapy programme stacks up against medication-only approaches…",
   },
   {
-    grad: "from-[#007fda] to-[#99caf0]",
+    grad: "from-[#2f7929] to-[#7bc320]",   // green
     label: "Neck Pain",
     date: "May 17, 2026",
     title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Can Give You Lasting Relief in Bangalore",
     excerpt: "If you wake up with a stiff neck or feel a constant ache at the base of your skull, you're not alone. We see this every day at the clinic — and the fix is rarely just about the neck itself…",
   },
   {
-    grad: "from-[#005aa0] to-[#3399e0]",
+    grad: "from-[#2f7929] to-[#9cdd15]",   // green
     label: "Back Pain",
     date: "May 17, 2026",
     title: "7 Proven Physiotherapy Treatments for Lower Back Pain in Bangalore",
     excerpt: "Lower back pain has become one of the most common health problems among working adults in Bangalore. We break down seven evidence-backed treatments and explain when each one is the right call…",
   },
   {
-    grad: "from-[#0068b8] to-[#66b3e8]",
+    grad: "from-[#7bc320] to-[#9cdd15]",   // green
     label: "Clinic",
     date: "May 10, 2026",
     title: "Best Physiotherapy Clinic in Kalyan Nagar: How to Choose the Right Treatment Centre",
@@ -39,9 +39,9 @@ const categories = [
 ];
 
 const latestPosts = [
-  { grad: "from-[#007fda] to-[#b3d8f5]", title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief", date: "May 24, 2026" },
-  { grad: "from-[#0068b8] to-[#99caf0]", title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
-  { grad: "from-[#0070c4] to-[#66b3e8]", title: "7 Proven Physiotherapy Treatments for Lower Back Pain", date: "May 17, 2026" },
+  { grad: "from-[#7bc320] to-[#9cdd15]",  title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief", date: "May 24, 2026" },
+  { grad: "from-[#56a326] to-[#b1de5f]",  title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
+  { grad: "from-[#56a326] to-[#9cdd15]",  title: "7 Proven Physiotherapy Treatments for Lower Back Pain", date: "May 17, 2026" },
 ];
 
 export default function BlogPage() {
@@ -62,7 +62,7 @@ export default function BlogPage() {
                   <span className="inline-block bg-brand-paper text-brand-olive border border-brand-line rounded-[4px] px-[10px] py-[3px] text-[11px] font-semibold tracking-[0.04em] mb-3">{date}</span>
                   <h3 className="text-[22px] tracking-[-0.01em] leading-[1.25] mb-[10px] hover:text-brand-olive cursor-pointer transition-colors">{title}</h3>
                   <p className="text-brand-sage text-[14px] mb-4">{excerpt}</p>
-                  <a href="#" className="inline-flex items-center gap-[6px] bg-brand-olive text-white px-4 py-2 rounded-full text-[12px] font-semibold hover:bg-[#5b614a] transition-colors">
+                  <a href="#" className="inline-flex items-center gap-[6px] bg-brand-olive text-white px-4 py-2 rounded-full text-[12px] font-semibold hover:bg-[#56a326] transition-colors">
                     Read More
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                   </a>
@@ -92,7 +92,7 @@ export default function BlogPage() {
               {/* Search */}
               <div className="border border-brand-line rounded-full px-[6px] py-[6px] flex gap-2 mb-7">
                 <input className="flex-1 bg-transparent border-0 outline-none px-4 py-[10px] text-[13px] text-[#3f3f3f] placeholder:text-brand-sage font-sans" placeholder="Search …" />
-                <button className="bg-brand-olive text-white border-0 cursor-pointer px-[18px] py-2 rounded-full text-[12px] font-semibold hover:bg-[#5b614a] transition-colors">Search</button>
+                <button className="bg-brand-olive text-white border-0 cursor-pointer px-[18px] py-2 rounded-full text-[12px] font-semibold hover:bg-[#56a326] transition-colors">Search</button>
               </div>
 
               {/* Categories widget */}
@@ -137,7 +137,7 @@ export default function BlogPage() {
                   <p className="text-[12.8px] text-brand-sage leading-[1.55] mb-3">Get every new article delivered to your inbox a few times a month.</p>
                   <div className="flex gap-[6px] items-center border border-brand-line rounded-full p-1">
                     <input type="email" placeholder="Your email" className="flex-1 bg-transparent border-0 outline-none px-3 py-2 text-[12.5px] font-sans" />
-                    <button className="w-[30px] h-[30px] rounded-full bg-brand-olive text-white border-0 cursor-pointer grid place-items-center hover:bg-[#5b614a] transition-colors flex-shrink-0">
+                    <button className="w-[30px] h-[30px] rounded-full bg-brand-olive text-white border-0 cursor-pointer grid place-items-center hover:bg-[#56a326] transition-colors flex-shrink-0">
                       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
                     </button>
                   </div>

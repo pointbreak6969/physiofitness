@@ -113,9 +113,9 @@ export default function ContactPage() {
             className="mt-12 rounded-[18px] overflow-hidden border border-brand-line aspect-[16/5] relative"
             style={{
               background: `
-                repeating-linear-gradient(0deg, transparent 0 60px, rgba(132,136,113,.12) 60px 61px),
-                repeating-linear-gradient(90deg, transparent 0 60px, rgba(132,136,113,.12) 60px 61px),
-                linear-gradient(135deg, #e5e4d8, #d2d1c0)
+                repeating-linear-gradient(0deg, transparent 0 60px, rgba(47,121,41,.12) 60px 61px),
+                repeating-linear-gradient(90deg, transparent 0 60px, rgba(47,121,41,.12) 60px 61px),
+                linear-gradient(135deg, #e5f6cc, #cde98a)
               `,
             }}
           >

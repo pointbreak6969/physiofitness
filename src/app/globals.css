@@ -6,15 +6,16 @@
 
 /* ── Brand primitives (change these to re-theme) ──────────────────── */
 :root {
-  --brand-ink:    #003566;   /* dark navy — headings & dark buttons */
-  --brand-olive:  #007fda;   /* primary blue — CTAs, active states  */
-  --brand-green:  #7ec31b;   /* secondary green — WhatsApp, badges  */
-  --brand-sage:   #4d96c0;   /* muted blue — secondary text         */
-  --brand-mist:   #9ec8e6;   /* light blue — subtle fills           */
-  --brand-paper:  #f0f8ff;   /* page background                     */
-  --brand-paper2: #e2eff9;   /* slightly darker bg variant          */
-  --brand-line:   #c8dcf0;   /* dividers / input borders            */
-  --brand-footer: #001e3d;   /* footer dark bg                      */
+  --brand-ink:    #173913;   /* dark forest green — headings & dark buttons */
+  --brand-olive:  #7bc320;   /* primary green (#7bc320) — CTAs, active     */
+  --brand-blue:   #0e76c5;   /* secondary blue (#0e76c5) — accents         */
+  --brand-green:  #56a326;   /* WhatsApp badge (#56a326)                    */
+  --brand-sage:   #2f7929;   /* muted dark green — secondary text          */
+  --brand-mist:   #b1de5f;   /* light lime — subtle fills                  */
+  --brand-paper:  #f2fae4;   /* page background (derived light lime)        */
+  --brand-paper2: #e5f6cc;   /* slightly darker bg                         */
+  --brand-line:   #cde98a;   /* dividers / input borders                   */
+  --brand-footer: #0d1521;   /* darkest navy — footer bg                   */
 }
 
 /* ── shadcn semantic tokens mapped to brand ──────────────────────── */
@@ -58,6 +59,7 @@
   /* Brand color utilities — use as bg-brand-olive, text-brand-sage, etc. */
   --color-brand-ink:    var(--brand-ink);
   --color-brand-olive:  var(--brand-olive);
+  --color-brand-blue:   var(--brand-blue);
   --color-brand-green:  var(--brand-green);
   --color-brand-sage:   var(--brand-sage);
   --color-brand-mist:   var(--brand-mist);

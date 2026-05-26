@@ -39,7 +39,7 @@ export default function FaqSection({ faqs, dark }: FaqSectionProps) {
             className="flex-1 bg-transparent border-0 outline-none text-white placeholder:text-brand-mist px-4 py-[10px] text-[14px] font-sans"
             placeholder="Do I need a doctor's referral?"
           />
-          <button className="bg-brand-olive text-white border-0 cursor-pointer px-4 py-[10px] rounded-full text-[13px] font-semibold hover:bg-[#5b614a] transition-colors">
+          <button className="bg-brand-olive text-white border-0 cursor-pointer px-4 py-[10px] rounded-full text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
             Search
           </button>
         </div>
