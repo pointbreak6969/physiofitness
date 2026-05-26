@@ -6,15 +6,15 @@
 
 /* ── Brand primitives (change these to re-theme) ──────────────────── */
 :root {
-  --brand-ink:    #003566;   /* dark navy — headings & dark buttons */
-  --brand-olive:  #007fda;   /* primary blue — CTAs, active states  */
-  --brand-green:  #7ec31b;   /* secondary green — WhatsApp, badges  */
-  --brand-sage:   #4d96c0;   /* muted blue — secondary text         */
-  --brand-mist:   #9ec8e6;   /* light blue — subtle fills           */
-  --brand-paper:  #f0f8ff;   /* page background                     */
-  --brand-paper2: #e2eff9;   /* slightly darker bg variant          */
-  --brand-line:   #c8dcf0;   /* dividers / input borders            */
-  --brand-footer: #001e3d;   /* footer dark bg                      */
+  --brand-ink:    #1a3a0a;   /* dark green-black — headings & dark buttons */
+  --brand-olive:  #60b520;   /* primary green — CTAs, active states        */
+  --brand-green:  #4a9c10;   /* secondary green — WhatsApp, badges         */
+  --brand-sage:   #5a8040;   /* muted green — secondary text               */
+  --brand-mist:   #a8d878;   /* light green — subtle fills                 */
+  --brand-paper:  #f4faea;   /* page background                            */
+  --brand-paper2: #e8f5d4;   /* slightly darker bg variant                 */
+  --brand-line:   #cce8a8;   /* dividers / input borders                   */
+  --brand-footer: #0e2205;   /* footer dark bg                             */
 }
 
 /* ── shadcn semantic tokens mapped to brand ──────────────────────── */

@@ -65,16 +65,16 @@ const services = [
 ];
 
 const svcGradients = [
-  "from-[#0070c4] to-[#3399e0]",
-  "from-[#007fda] to-[#66b3e8]",
-  "from-[#005aa0] to-[#007fda]",
-  "from-[#0068b8] to-[#99caf0]",
-  "from-[#99caf0] to-[#0070c4]",
-  "from-[#003566] to-[#007fda]",
-  "from-[#007fda] to-[#cce3f8]",
-  "from-[#66b3e8] to-[#005aa0]",
-  "from-[#0070c4] to-[#b3d8f5]",
-  "from-[#0068b8] to-[#66b3e8]",
+  "from-[#50a518] to-[#78cc30]",
+  "from-[#60b520] to-[#96d850]",
+  "from-[#3d8010] to-[#60b520]",
+  "from-[#4a9c10] to-[#b8e880]",
+  "from-[#b8e880] to-[#50a518]",
+  "from-[#1a3a0a] to-[#60b520]",
+  "from-[#60b520] to-[#dcf5bc]",
+  "from-[#96d850] to-[#3d8010]",
+  "from-[#50a518] to-[#caf0a0]",
+  "from-[#4a9c10] to-[#96d850]",
 ];
 
 const team = [
@@ -87,12 +87,12 @@ const team = [
 ];
 
 const avatarGradients = [
-  "from-[#b3d8f5] to-[#0070c4]",
-  "from-[#99caf0] to-[#005aa0]",
-  "from-[#cce3f8] to-[#007fda]",
-  "from-[#b3d8f5] to-[#3399e0]",
-  "from-[#b3d8f5] to-[#0070c4]",
-  "from-[#cce3f8] to-[#007fda]",
+  "from-[#caf0a0] to-[#50a518]",
+  "from-[#b8e880] to-[#3d8010]",
+  "from-[#dcf5bc] to-[#60b520]",
+  "from-[#caf0a0] to-[#78cc30]",
+  "from-[#caf0a0] to-[#50a518]",
+  "from-[#dcf5bc] to-[#60b520]",
 ];
 
 const whyItems = [
@@ -150,10 +150,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div
               className="aspect-[4/3] rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
-              style={{ background: "radial-gradient(ellipse at 30% 40%, #cce3f8 0%, #66b3e8 45%, #0070c4 100%)" }}
+              style={{ background: "radial-gradient(ellipse at 30% 40%, #dcf5bc 0%, #96d850 45%, #50a518 100%)" }}
             >
-              <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,53,102,.15) 100%)" }} />
-              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #99caf0, #0068b8)", boxShadow: "inset 0 -10px 30px rgba(0,53,102,.25)" }} />
+              <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(26,58,10,.15) 100%)" }} />
+              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #b8e880, #4a9c10)", boxShadow: "inset 0 -10px 30px rgba(26,58,10,.25)" }} />
               <span className="absolute left-[18px] top-[18px] bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-[6px] rounded-full uppercase backdrop-blur-sm">
                 Our Clinic
               </span>
@@ -245,9 +245,9 @@ export default function HomePage() {
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #b3d8f5, #0070c4 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #caf0a0, #50a518 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #cce3f8, #0070c4)", boxShadow: "inset 0 -20px 30px rgba(0,53,102,.2)" }} />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #dcf5bc, #50a518)", boxShadow: "inset 0 -20px 30px rgba(26,58,10,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
             </div>
           </div>
