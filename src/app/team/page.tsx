@@ -2,14 +2,14 @@ import PageBanner from "@/components/shared/PageBanner";
 
 const row1 = [
   { name: "Dr. Adnan Shaikh", role: "Consultant Physiotherapist", sub: "Co-Founder & Director", grad: "from-[#2f7929] to-[#7bc320]" },
-  { name: "Waseem Khan", role: "Co-Founder & CEO", sub: "", grad: "from-[#7bc320] to-[#0e76c5]" },
+  { name: "Waseem Khan", role: "Co-Founder & CEO", sub: "", grad: "from-[#7bc320] to-[#9cdd15]" },
   { name: "Dr. Sayeda Nimra", role: "Clinical Physiotherapist", sub: "", grad: "from-[#56a326] to-[#9cdd15]" },
-  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist", sub: "", grad: "from-[#0e76c5] to-[#7bc320]" },
+  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist", sub: "", grad: "from-[#56a326] to-[#9cdd15]" },
 ];
 
 const row2 = [
   { name: "Dr. Muqit PT", role: "Clinical Physiotherapist", grad: "from-[#2f7929] to-[#9cdd15]" },
-  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist", grad: "from-[#7bc320] to-[#0e76c5]" },
+  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist", grad: "from-[#7bc320] to-[#9cdd15]" },
   { name: "Dr. Saleena PT", role: "Clinical Physiotherapist", grad: "from-[#56a326] to-[#9cdd15]" },
 ];
 
@@ -53,7 +53,7 @@ export default function TeamPage() {
           {/* Row 2 — full portrait cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 max-w-[880px] mx-auto">
             {row2.map(({ name, role, grad }, i) => {
-              const portraitGrads = ["from-[#2f7929] to-[#9cdd15]", "from-[#7bc320] to-[#0e76c5]", "from-[#56a326] to-[#9cdd15]"];
+              const portraitGrads = ["from-[#2f7929] to-[#9cdd15]", "from-[#7bc320] to-[#9cdd15]", "from-[#56a326] to-[#9cdd15]"];
               return (
                 <div key={name} className="bg-white border border-brand-line rounded-[16px] overflow-hidden hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
                   <div className={`aspect-[1/1.05] bg-gradient-to-b ${portraitGrads[i % 3]} relative`}>

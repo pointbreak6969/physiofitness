@@ -68,12 +68,12 @@ const svcGradients = [
   "from-[#2f7929] to-[#7bc320]",   // green
   "from-[#7bc320] to-[#9cdd15]",   // green
   "from-[#56a326] to-[#9cdd15]",   // green
-  "from-[#7bc320] to-[#0e76c5]",   // green → blue
+  "from-[#56a326] to-[#9cdd15]",   // green
   "from-[#2f7929] to-[#b1de5f]",   // green
-  "from-[#0e76c5] to-[#7bc320]",   // blue → green
+  "from-[#2f7929] to-[#7bc320]",   // green
   "from-[#7bc320] to-[#b1de5f]",   // green
-  "from-[#06498b] to-[#9cdd15]",   // blue → green
-  "from-[#56a326] to-[#0e76c5]",   // green → blue
+  "from-[#173913] to-[#9cdd15]",   // green
+  "from-[#56a326] to-[#b1de5f]",   // green
   "from-[#2f7929] to-[#9cdd15]",   // green
 ];
 
@@ -88,11 +88,11 @@ const team = [
 
 const avatarGradients = [
   "from-[#b1de5f] to-[#2f7929]",   // green
-  "from-[#b1de5f] to-[#0e76c5]",   // blue (secondary)
+  "from-[#b1de5f] to-[#2f7929]",   // green
   "from-[#b1de5f] to-[#7bc320]",   // green
-  "from-[#0e76c5] to-[#7bc320]",   // blue → green
+  "from-[#2f7929] to-[#7bc320]",   // green
   "from-[#b1de5f] to-[#56a326]",   // green
-  "from-[#b1de5f] to-[#0e76c5]",   // green → blue
+  "from-[#b1de5f] to-[#56a326]",   // green
 ];
 
 const whyItems = [
@@ -245,9 +245,9 @@ export default function HomePage() {
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #b1de5f, #0e76c5 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #b1de5f, #2f7929 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b1de5f, #0e76c5)", boxShadow: "inset 0 -20px 30px rgba(6,73,139,.2)" }} />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
             </div>
           </div>

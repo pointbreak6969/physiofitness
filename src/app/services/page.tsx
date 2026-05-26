@@ -15,14 +15,14 @@ const services = [
 
 const gradients = [
   "from-[#2f7929] to-[#7bc320]",   // green
-  "from-[#7bc320] to-[#0e76c5]",   // green → blue
+  "from-[#56a326] to-[#9cdd15]",   // green
   "from-[#56a326] to-[#9cdd15]",   // green
   "from-[#2f7929] to-[#b1de5f]",   // green
-  "from-[#0e76c5] to-[#9cdd15]",   // blue → green
+  "from-[#2f7929] to-[#9cdd15]",   // green
   "from-[#7bc320] to-[#9cdd15]",   // green
-  "from-[#0e76c5] to-[#7bc320]",   // blue → green
+  "from-[#173913] to-[#7bc320]",   // green
   "from-[#9cdd15] to-[#2f7929]",   // green
-  "from-[#7bc320] to-[#06498b]",   // green → blue
+  "from-[#7bc320] to-[#2f7929]",   // green
   "from-[#2f7929] to-[#9cdd15]",   // green
 ];
 

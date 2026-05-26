@@ -9,7 +9,7 @@ const posts = [
     excerpt: "Chronic pain is one of the most complex healthcare challenges globally, affecting millions of people every year. Here's how a structured, multimodal physiotherapy programme stacks up against medication-only approaches…",
   },
   {
-    grad: "from-[#0e76c5] to-[#7bc320]",   // blue → green
+    grad: "from-[#2f7929] to-[#7bc320]",   // green
     label: "Neck Pain",
     date: "May 17, 2026",
     title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Can Give You Lasting Relief in Bangalore",
@@ -23,7 +23,7 @@ const posts = [
     excerpt: "Lower back pain has become one of the most common health problems among working adults in Bangalore. We break down seven evidence-backed treatments and explain when each one is the right call…",
   },
   {
-    grad: "from-[#7bc320] to-[#0e76c5]",   // green → blue
+    grad: "from-[#7bc320] to-[#9cdd15]",   // green
     label: "Clinic",
     date: "May 10, 2026",
     title: "Best Physiotherapy Clinic in Kalyan Nagar: How to Choose the Right Treatment Centre",
@@ -40,7 +40,7 @@ const categories = [
 
 const latestPosts = [
   { grad: "from-[#7bc320] to-[#9cdd15]",  title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief", date: "May 24, 2026" },
-  { grad: "from-[#06498b] to-[#7bc320]",  title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
+  { grad: "from-[#56a326] to-[#b1de5f]",  title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
   { grad: "from-[#56a326] to-[#9cdd15]",  title: "7 Proven Physiotherapy Treatments for Lower Back Pain", date: "May 17, 2026" },
 ];
 
