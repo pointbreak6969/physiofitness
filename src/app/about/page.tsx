@@ -54,11 +54,11 @@ export default function AboutPage() {
             {/* Clinic photo placeholder */}
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #caf0a0, #50a518 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #a8d878, #007fda 80%)" }}
             >
               <div className="absolute left-[-6%] top-[6%] w-[28%] h-[28%] border-2 border-white/40 rounded-full" />
               <div className="absolute left-[-10%] top-[2%] w-[36%] h-[36%] border-2 border-white/20 rounded-full" />
-              <div className="absolute left-[14%] right-[14%] top-[28%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #dcf5bc, #50a518)", boxShadow: "inset 0 -20px 30px rgba(26,58,10,.2)" }} />
+              <div className="absolute left-[14%] right-[14%] top-[28%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b3d8f5, #007fda)", boxShadow: "inset 0 -20px 30px rgba(0,53,102,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
               <span className="absolute inset-0 grid place-items-center text-brand-ink/35 text-[11px] tracking-[0.22em] uppercase">Clinic Facade</span>
             </div>

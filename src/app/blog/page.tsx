@@ -2,28 +2,28 @@ import PageBanner from "@/components/shared/PageBanner";
 
 const posts = [
   {
-    grad: "from-[#50a518] to-[#caf0a0]",
+    grad: "from-[#50a518] to-[#78cc30]",   // green
     label: "Chronic Pain",
     date: "May 24, 2026",
     title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief",
     excerpt: "Chronic pain is one of the most complex healthcare challenges globally, affecting millions of people every year. Here's how a structured, multimodal physiotherapy programme stacks up against medication-only approaches…",
   },
   {
-    grad: "from-[#60b520] to-[#b8e880]",
+    grad: "from-[#007fda] to-[#60b520]",   // blue → green
     label: "Neck Pain",
     date: "May 17, 2026",
     title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Can Give You Lasting Relief in Bangalore",
     excerpt: "If you wake up with a stiff neck or feel a constant ache at the base of your skull, you're not alone. We see this every day at the clinic — and the fix is rarely just about the neck itself…",
   },
   {
-    grad: "from-[#3d8010] to-[#78cc30]",
+    grad: "from-[#3d8010] to-[#78cc30]",   // green
     label: "Back Pain",
     date: "May 17, 2026",
     title: "7 Proven Physiotherapy Treatments for Lower Back Pain in Bangalore",
     excerpt: "Lower back pain has become one of the most common health problems among working adults in Bangalore. We break down seven evidence-backed treatments and explain when each one is the right call…",
   },
   {
-    grad: "from-[#4a9c10] to-[#96d850]",
+    grad: "from-[#60b520] to-[#0070c4]",   // green → blue
     label: "Clinic",
     date: "May 10, 2026",
     title: "Best Physiotherapy Clinic in Kalyan Nagar: How to Choose the Right Treatment Centre",
@@ -39,9 +39,9 @@ const categories = [
 ];
 
 const latestPosts = [
-  { grad: "from-[#60b520] to-[#caf0a0]", title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief", date: "May 24, 2026" },
-  { grad: "from-[#4a9c10] to-[#b8e880]", title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
-  { grad: "from-[#50a518] to-[#96d850]", title: "7 Proven Physiotherapy Treatments for Lower Back Pain", date: "May 17, 2026" },
+  { grad: "from-[#60b520] to-[#96d850]",  title: "Can Physiotherapy Cure Chronic Pain? The Blueprint for Long-Term Relief", date: "May 24, 2026" },
+  { grad: "from-[#0068b8] to-[#60b520]",  title: "Neck Pain and Cervical Spondylosis: How Physiotherapy Gives You Lasting Relief", date: "May 17, 2026" },
+  { grad: "from-[#50a518] to-[#78cc30]",  title: "7 Proven Physiotherapy Treatments for Lower Back Pain", date: "May 17, 2026" },
 ];
 
 export default function BlogPage() {

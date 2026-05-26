@@ -65,16 +65,16 @@ const services = [
 ];
 
 const svcGradients = [
-  "from-[#50a518] to-[#78cc30]",
-  "from-[#60b520] to-[#96d850]",
-  "from-[#3d8010] to-[#60b520]",
-  "from-[#4a9c10] to-[#b8e880]",
-  "from-[#b8e880] to-[#50a518]",
-  "from-[#1a3a0a] to-[#60b520]",
-  "from-[#60b520] to-[#dcf5bc]",
-  "from-[#96d850] to-[#3d8010]",
-  "from-[#50a518] to-[#caf0a0]",
-  "from-[#4a9c10] to-[#96d850]",
+  "from-[#3d8010] to-[#60b520]",   // green
+  "from-[#60b520] to-[#96d850]",   // green
+  "from-[#50a518] to-[#78cc30]",   // green
+  "from-[#60b520] to-[#007fda]",   // green → blue
+  "from-[#4a9c10] to-[#b8e880]",   // green
+  "from-[#007fda] to-[#60b520]",   // blue → green
+  "from-[#60b520] to-[#dcf5bc]",   // green
+  "from-[#0068b8] to-[#78cc30]",   // blue → green
+  "from-[#50a518] to-[#0070c4]",   // green → blue
+  "from-[#4a9c10] to-[#96d850]",   // green
 ];
 
 const team = [
@@ -87,12 +87,12 @@ const team = [
 ];
 
 const avatarGradients = [
-  "from-[#caf0a0] to-[#50a518]",
-  "from-[#b8e880] to-[#3d8010]",
-  "from-[#dcf5bc] to-[#60b520]",
-  "from-[#caf0a0] to-[#78cc30]",
-  "from-[#caf0a0] to-[#50a518]",
-  "from-[#dcf5bc] to-[#60b520]",
+  "from-[#a8d878] to-[#3d8010]",   // green
+  "from-[#b3d8f5] to-[#007fda]",   // blue (secondary)
+  "from-[#dcf5bc] to-[#60b520]",   // green
+  "from-[#99caf0] to-[#60b520]",   // blue → green
+  "from-[#caf0a0] to-[#50a518]",   // green
+  "from-[#dcf5bc] to-[#007fda]",   // green → blue
 ];
 
 const whyItems = [
@@ -245,9 +245,9 @@ export default function HomePage() {
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #caf0a0, #50a518 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #a8d878, #007fda 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #dcf5bc, #50a518)", boxShadow: "inset 0 -20px 30px rgba(26,58,10,.2)" }} />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b3d8f5, #007fda)", boxShadow: "inset 0 -20px 30px rgba(0,53,102,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
             </div>
           </div>

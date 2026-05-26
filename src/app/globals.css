@@ -6,9 +6,10 @@
 
 /* ── Brand primitives (change these to re-theme) ──────────────────── */
 :root {
-  --brand-ink:    #1a3a0a;   /* dark green-black — headings & dark buttons */
-  --brand-olive:  #60b520;   /* primary green — CTAs, active states        */
-  --brand-green:  #4a9c10;   /* secondary green — WhatsApp, badges         */
+  --brand-ink:    #1a3a0a;   /* dark green-black — headings & dark buttons  */
+  --brand-olive:  #60b520;   /* primary (60%) green — CTAs, active states  */
+  --brand-blue:   #007fda;   /* secondary (30%) blue — accents, gradients  */
+  --brand-green:  #4a9c10;   /* WhatsApp badge green                        */
   --brand-sage:   #5a8040;   /* muted green — secondary text               */
   --brand-mist:   #a8d878;   /* light green — subtle fills                 */
   --brand-paper:  #f4faea;   /* page background                            */
@@ -58,6 +59,7 @@
   /* Brand color utilities — use as bg-brand-olive, text-brand-sage, etc. */
   --color-brand-ink:    var(--brand-ink);
   --color-brand-olive:  var(--brand-olive);
+  --color-brand-blue:   var(--brand-blue);
   --color-brand-green:  var(--brand-green);
   --color-brand-sage:   var(--brand-sage);
   --color-brand-mist:   var(--brand-mist);
