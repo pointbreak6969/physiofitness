@@ -4,6 +4,7 @@ import "./globals.css";
 import PromoBar from "@/components/layout/PromoBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { Toaster } from "@/components/ui/sonner";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -36,6 +37,7 @@ export default function RootLayout({
         <PromoBar />
         <Navbar />
         <main className="flex-1">{children}</main>
+             <Toaster />
         <Footer />
       </body>
     </html>

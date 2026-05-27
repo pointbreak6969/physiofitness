@@ -1,10 +1,7 @@
-"use client";
-
-import { useState } from "react";
 import PageBanner from "@/components/shared/PageBanner";
+import ContactForm from "./ContactForm";
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
 
   return (
     <>
@@ -60,52 +57,7 @@ export default function ContactPage() {
               It&apos;s <span className="font-serif italic font-normal text-brand-olive">Easy.</span>
             </h2>
             <p className="text-brand-sage text-[14px] mb-9">Please fill out the form below and we will get back to you soon.</p>
-
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                setSubmitted(true);
-              }}
-            >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[22px_26px]">
-                {[
-                  { label: "Your Name", type: "text", placeholder: "Jane Doe" },
-                  { label: "Your Email", type: "email", placeholder: "jane@email.com" },
-                  { label: "Your Mobile Number", type: "tel", placeholder: "+91 …" },
-                  { label: "Subject", type: "text", placeholder: "What's this about?" },
-                ].map(({ label, type, placeholder }) => (
-                  <div key={label}>
-                    <label className="block text-[12.5px] text-brand-sage font-semibold mb-2 tracking-[0.02em]">{label}</label>
-                    <input
-                      type={type}
-                      placeholder={placeholder}
-                      className="w-full bg-brand-paper border border-brand-line rounded-full px-[22px] py-[14px] text-[14px] text-brand-ink outline-none focus:border-brand-olive focus:bg-white transition-[border-color,background-color]"
-                    />
-                  </div>
-                ))}
-                <div className="col-span-full">
-                  <label className="block text-[12.5px] text-brand-sage font-semibold mb-2 tracking-[0.02em]">Your Message (optional)</label>
-                  <textarea
-                    placeholder="Tell us a bit about your condition or what you're looking for…"
-                    rows={6}
-                    className="w-full bg-brand-paper border border-brand-line rounded-[18px] px-[22px] py-4 text-[14px] text-brand-ink outline-none focus:border-brand-olive focus:bg-white transition-[border-color,background-color] resize-y"
-                  />
-                </div>
-              </div>
-              <div className="mt-[30px]">
-                <button
-                  type="submit"
-                  className="inline-flex items-center gap-2 bg-brand-ink text-white rounded-full px-[22px] py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
-                >
-                  {submitted ? "Sent ✓" : "Submit"}
-                  {!submitted && (
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M13 5l7 7-7 7"/>
-                    </svg>
-                  )}
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
 
           {/* Map placeholder */}
