@@ -5,6 +5,7 @@ import PromoBar from "@/components/layout/PromoBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { headers } from "next/headers";
 
 const plusJakarta = Plus_Jakarta_Sans({
   variable: "--font-plus-jakarta",
@@ -25,20 +26,24 @@ export const metadata: Metadata = {
     "A leading robotics and advanced physiotherapy clinic in Bangalore, blending evidence-based protocols with cutting-edge tech to get you back to what you love.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
+  const headersList = await headers();
+  const pathname = headersList.get("x-pathname") ?? "";
+  const isAdmin = pathname.startsWith("/admin");
+
   return (
     <html
       lang="en"
       className={`${plusJakarta.variable} ${instrumentSerif.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-brand-paper">
-        <PromoBar />
-        <Navbar />
+        {!isAdmin && <PromoBar />}
+        {!isAdmin && <Navbar />}
         <main className="flex-1">{children}</main>
-             <Toaster />
-        <Footer />
+        <Toaster />
+        {!isAdmin && <Footer />}
       </body>
     </html>
   );
