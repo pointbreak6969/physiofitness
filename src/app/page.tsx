@@ -5,63 +5,56 @@ import FaqSection from "@/components/shared/FaqSection";
 
 const treatments = [
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 13l4 4 8-12"/><circle cx="18" cy="6" r="2"/><path d="M3 20h18"/></svg>,
-    title: "IASTM Therapy",
-    desc: "Instrument-assisted soft tissue mobilization for athletes and chronic pain.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h3l2-5 3 10 2-5 2 2.5h8"/><circle cx="4.5" cy="17" r="1.5"/><line x1="4.5" y1="15.5" x2="4.5" y2="13"/><circle cx="19.5" cy="17" r="1.5"/><line x1="19.5" y1="15.5" x2="19.5" y2="13"/></svg>,
+    title: "TENS",
+    desc: "May be used for pain modulation and comfort.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7V4M17 7V4M3 12h18"/></svg>,
-    title: "Chiropractic PT",
-    desc: "Manual spinal adjustments combined with physiotherapy for alignment.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9c2.5 0 2.5 6 5 6s2.5-6 5-6 2.5 6 5 6 2.5-6 5-6"/><path d="M2 15c2.5 0 2.5-6 5-6s2.5 6 5 6 2.5-6 5-6 2.5 6 5 6" strokeOpacity="0.4"/></svg>,
+    title: "IFT",
+    desc: "Used in selected pain and soft-tissue conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M8 3v6a4 4 0 0 0 8 0V3M8 21v-6a4 4 0 0 1 8 0v6"/></svg>,
-    title: "Bone Setting",
-    desc: "Joint correction techniques for alignment and post-trauma recovery.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L7 13h5l-1 9 7-11h-5z"/></svg>,
+    title: "EMS",
+    desc: "Can support muscle activation when clinically appropriate.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2v20M5 9l7-7 7 7M5 15l7 7 7-7"/></svg>,
-    title: "Dry Needling",
-    desc: "Targets myofascial trigger points to release tension and accelerate healing.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="2" width="6" height="9" rx="3"/><path d="M12 11v3"/><path d="M9 17c0-1.7 1.3-3 3-3s3 1.3 3 3"/><path d="M6 19.5C6 17 8.7 15 12 15s6 2 6 4.5"/></svg>,
+    title: "Ultrasound",
+    desc: "Used selectively for soft-tissue and pain-related conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 12h16M8 8h8M8 16h8M12 4v16"/></svg>,
-    title: "Taping Therapy",
-    desc: "Kinesio and rigid taping for joint support, swelling control, and motor cueing.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="8 7 12 3 16 7"/><polyline points="8 17 12 21 16 17"/><line x1="5" y1="12" x2="19" y2="12"/></svg>,
+    title: "Traction",
+    desc: "Cervical or lumbar traction only after screening and indication.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="8" cy="12" r="3"/><circle cx="16" cy="12" r="3"/><path d="M4 6h16M4 18h16"/></svg>,
-    title: "Cupping Therapy",
-    desc: "Suction-based therapy that boosts circulation and decompresses fascia.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>,
+    title: "ESWT / Laser",
+    desc: "Advanced options for selected musculoskeletal conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12h3l2-5 4 10 2-5 2 3h5"/></svg>,
-    title: "IFT / Ultrasound",
-    desc: "Electro and sound modalities for pain relief and deep tissue healing.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>,
+    title: "Hydrocollator / Cold Packs",
+    desc: "Heat and cold therapy for comfort and preparation.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12c0-4 3-7 7-7s7 3 7 7-3 7-7 7"/><path d="M9 12h6"/></svg>,
-    title: "Myofascial Release",
-    desc: "Hands-on fascial work that improves glide and reduces restrictions.",
-  },
-  {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="6" r="2"/><path d="M9 22l2-8 3 2 4-2-2 8M5 12l4-2"/></svg>,
-    title: "Muscle Energy Technique",
-    desc: "Active contraction-against-resistance to restore range and reduce spasm.",
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" strokeDasharray="3 2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 21v-3.5a4 4 0 0 1 8 0V21"/><line x1="8" y1="13" x2="16" y2="13"/></svg>,
+    title: "X-ray Screen / Assessment",
+    desc: "Supports clinical interpretation with reports and referral documents.",
   },
 ];
 
 const services = [
-  { label: "Back Pain", title: "Back Pain Physiotherapy", desc: "Targeted programmes for disc, postural, and muscular back pain." },
-  { label: "Knee Pain", title: "Knee Pain Physiotherapy", desc: "Restoring function for arthritic, ligament, and tendon issues." },
-  { label: "Shoulder", title: "Shoulder Physiotherapy", desc: "From frozen shoulder to rotator cuff — full-range recovery." },
-  { label: "Post-Surgical", title: "Post-Surgical Rehab", desc: "Hospital-discharge to full mobility, supervised end-to-end." },
-  { label: "Sports Injury", title: "Sports Injury Rehab", desc: "Sprains, strains, fractures — back to your sport, stronger." },
-  { label: "Chronic Pain", title: "Chronic Pain Management", desc: "Multimodal plans for arthritis, sciatica, and fibromyalgia." },
-  { label: "Neurological", title: "Neurological Physiotherapy", desc: "Stroke, Parkinson's, and post-injury motor recovery." },
-  { label: "Posture", title: "Posture Correction", desc: "Desk-worker reset programmes and biomechanical alignment." },
-  { label: "Paediatric", title: "Paediatric Physiotherapy", desc: "Developmental delays, congenital and acquired conditions." },
-  { label: "Neck Pain", title: "Neck Pain Management", desc: "Cervical mobilisation, posture work, and trigger-point therapy." },
+  { label: "Assessment", title: "Assessment & Planning", desc: "Detailed assessment and personalised treatment planning tailored to your condition." },
+  { label: "Manual", title: "Manual Therapy", desc: "Manual therapy and joint mobilization applied when clinically indicated." },
+  { label: "Exercise", title: "Therapeutic Exercise", desc: "Structured mobility, stretching, strengthening and balance programmes." },
+  { label: "Posture", title: "Posture & Ergonomics", desc: "Posture correction and ergonomic advice for work and daily life." },
+  { label: "Education", title: "Pain Education", desc: "Pain education and self-management strategies to build long-term confidence." },
+  { label: "Home Plan", title: "Home Exercise Program", desc: "Take-home exercise program with clear, step-by-step instructions." },
+  { label: "Monitoring", title: "Progress Monitoring", desc: "Regular review and plan modification as your condition evolves." },
+  { label: "Referral", title: "Referral Guidance", desc: "Referral guidance when red flags or medical concerns are suspected." },
 ];
 
 const svcGradients = [
@@ -135,47 +128,48 @@ const faqs = [
     q: "What makes robotic physiotherapy different?",
     a: "Robotic-assisted therapy provides precise force control, consistent intensity, and measurable progress data — especially useful for neurological and post-surgical patients.",
   },
-  {
-    q: "Do you accept insurance?",
-    a: "We work with most major health insurance providers. Our admin team will verify coverage before your first visit.",
-  },
+
 ];
 
 export default function HomePage() {
   return (
     <>
       {/* ── Hero ──────────────────────────────────────────────────── */}
-      <section className="bg-brand-paper py-[38px] pb-14">
-        <div className="max-w-[1180px] mx-auto px-7">
+      <section className="bg-brand-paper py-9.25 pb-14">
+        <div className="max-w-295 mx-auto px-7">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div
-              className="aspect-[4/3] rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
+              className="aspect-4/3 rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
               style={{ background: "radial-gradient(ellipse at 30% 40%, #b1de5f 0%, #9cdd15 45%, #56a326 100%)" }}
             >
               <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(23,57,19,.15) 100%)" }} />
               <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -10px 30px rgba(23,57,19,.25)" }} />
-              <span className="absolute left-[18px] top-[18px] bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-[6px] rounded-full uppercase backdrop-blur-sm">
+              <span className="absolute left-4.5 top-4.5 bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-1.5 rounded-full uppercase backdrop-blur-sm">
                 Our Clinic
               </span>
             </div>
 
             <div className="order-1 lg:order-2">
-              <h1 className="text-[40px] lg:text-[46px] leading-[1.08] tracking-[-0.02em] text-brand-ink mb-[18px]">
-                Best <span className="font-serif italic font-normal text-brand-olive">Robotics</span> and Advanced
+              <h1 className="text-[40px] lg:text-[46px] leading-[1.08] tracking-[-0.02em] text-brand-ink mb-4.5">
+                Nepal's First  <br/>
+                 {/* <span className="font-serif italic font-normal text-brand-olive">Robotics</span>  */}
+                 and Advanced
                 <br className="hidden sm:block" /> Physiotherapy Clinic
-                <br className="hidden sm:block" /> in Bangalore
+                <br className="hidden sm:block" /> in Pokhara
               </h1>
-              <p className="text-brand-sage text-[15px] max-w-[480px] mb-[22px]">
-                Reclaim your movement with India&apos;s most advanced rehabilitation team — personalised programmes for acute injury, chronic pain, and athletic recovery.
+              <p className="text-brand-sage text-[15px] max-w-120 mb-5.5">
+               A modern physiotherapy, rehabilitation and supervised gym centre designed for
+              people who want to recover safely, rebuild strength and return to daily life with
+              confidence.
               </p>
-              <div className="flex items-center gap-[14px] mb-[26px]">
+              <div className="flex items-center gap-3.5 mb-6.5">
                 <span className="text-brand-olive font-bold text-[22px]">5.0</span>
                 <span className="text-brand-olive text-[18px] tracking-widest">★★★★★</span>
                 <span className="text-brand-sage text-[12px]">Google rating · 240+ reviews</span>
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-brand-ink text-white rounded-full px-[22px] py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
+                className="inline-flex items-center gap-2 bg-brand-ink text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
               >
                 Book Your Consultation
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
@@ -187,7 +181,7 @@ export default function HomePage() {
 
       {/* ── Stats ─────────────────────────────────────────────────── */}
       <section className="bg-brand-paper border-t border-brand-line">
-        <div className="max-w-[1180px] mx-auto px-7">
+        <div className="max-w-295 mx-auto px-7">
           <div className="grid grid-cols-1 sm:grid-cols-3 text-center py-9">
             {[
               { num: "1,000+", label: "Patients Treated" },
@@ -209,19 +203,19 @@ export default function HomePage() {
 
       {/* ── Booking ───────────────────────────────────────────────── */}
       <section className="bg-brand-paper2 py-9">
-        <div className="max-w-[1180px] mx-auto px-7">
+        <div className="max-w-295 mx-auto px-7">
           <div className="bg-white rounded-[18px] border border-brand-line shadow-[0_30px_60px_-40px_rgba(38,43,21,0.3)] grid grid-cols-1 sm:grid-cols-2 overflow-hidden">
             <div className="p-7 sm:p-8">
               <h4 className="text-[18px] mb-2">Book an <span className="text-brand-olive">Appointment</span></h4>
               <p className="text-brand-sage text-[13px] mb-4">Our care team is one call away — schedule your visit in under a minute.</p>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-[22px] py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-5.5py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
                 Call Now
               </Link>
             </div>
             <div className="p-7 sm:p-8 border-t sm:border-t-0 sm:border-l border-brand-line">
               <h4 className="text-[18px] mb-2">Opening <span className="text-brand-olive">Hours</span></h4>
-              <div className="grid grid-cols-[110px_1fr] gap-y-[6px] text-[13.5px] text-[#3f3f3f]">
+              <div className="grid grid-cols-[110px_1fr] gap-y-1.5 text-[13.5px] text-[#3f3f3f]">
                 <span className="text-brand-sage font-semibold">Mon — Fri</span><span>07:00 – 21:00</span>
                 <span className="text-brand-sage font-semibold">Saturday</span><span>09:00 – 21:00</span>
                 <span className="text-brand-sage font-semibold">Sunday</span><span className="text-brand-olive font-bold">By Appointment</span>
@@ -232,66 +226,77 @@ export default function HomePage() {
       </section>
 
       {/* ── About ─────────────────────────────────────────────────── */}
-      <section className="py-[70px]">
-        <div className="max-w-[1180px] mx-auto px-7">
-          <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-14 items-center">
+      <section className="py-17.5">
+        <div className="max-w-295 mx-auto px-7">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-3.5 items-center">
             <div>
-              <h2 className="text-[30px] mb-[18px]">
+              <h2 className="text-[30px] mb-4.5">
                 About <span className="font-serif italic font-normal text-brand-olive">PhysioPath</span>
               </h2>
-              <p className="text-[#3f3f3f] text-[14.5px] mb-[14px]">PhysioPath is a Bangalore-based clinic pairing senior physiotherapists with the latest robotic rehabilitation tools. We treat the full spectrum — from stubborn chronic pain to post-surgical recovery and elite-athlete return-to-play.</p>
-              <p className="text-[#3f3f3f] text-[14.5px] mb-[14px]">Every plan is built around measurable goals: better mobility, more strength, less pain. We&apos;re proud of our outcome rates, but even prouder of how patients feel walking out the door.</p>
-              <p className="text-brand-olive font-semibold text-[13.5px]">PhysioPath — robotics and advanced physiotherapy, Bangalore.</p>
+              <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">PhysioPath is a centre built around one simple belief: movement is medicine when it is guided, safe and
+personalized.</p>
+              <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">At PhysioFitness Pain And Rehabilitation Centre, we combine physiotherapy assessment,
+evidence-informed treatment, modern modalities, progressive exercise and supervised gym
+training. Our goal is not only to reduce pain, but also to help you understand your condition,
+improve your movement, and build the confidence to stay active.</p>
+              <p className="text-brand-olive font-semibold text-[13.5px]">PhysioPath — rehabilation and advanced physiotherapy, Pokhara.</p>
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
               style={{ background: "radial-gradient(circle at 35% 30%, #b1de5f, #2f7929 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-[4px]" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
-              <div className="absolute left-0 right-0 bottom-[30%] h-[6px] bg-brand-ink" />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-lg" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
+              <div className="absolute left-0 right-0 bottom-[30%] h-1.5 bg-brand-ink" />
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Treatments ────────────────────────────────────────────── */}
-      <section className="bg-brand-paper2 pb-[70px]">
-        <div className="max-w-[1180px] mx-auto px-7">
+      <section className="bg-brand-paper2 pb-17.5">
+        <div className="max-w-295 mx-auto px-7">
           <SectionHeader
             eyebrow="What We Offer"
             title={<>Our <span className="font-serif italic font-normal text-brand-olive">Treatments</span></>}
-            subtitle="Nine specialist modalities, tuned to your specific condition and recovery goals."
+            subtitle="Eight specialist modalities, tuned to your specific condition and recovery goals."
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-9 mt-12">
             {treatments.map(({ icon, title, desc }) => (
               <div key={title} className="text-center group">
-                <div className="w-[92px] h-[92px] rounded-full bg-white border border-brand-line shadow-[0_18px_36px_-20px_rgba(38,43,21,0.25)] mx-auto mb-4 grid place-items-center text-brand-olive group-hover:-translate-y-1 group-hover:shadow-[0_24px_40px_-18px_rgba(38,43,21,0.3)] transition-[transform,box-shadow] duration-200">
+                <div className="w-23 h-23 rounded-full bg-white border border-brand-line shadow-[0_18px_36px_-20px_rgba(38,43,21,0.25)] mx-auto mb-4 grid place-items-center text-brand-olive group-hover:-translate-y-1 group-hover:shadow-[0_24px_40px_-18px_rgba(38,43,21,0.3)] transition-[transform,box-shadow] duration-200">
                   {icon}
                 </div>
-                <h4 className="text-[15px] mb-[10px]">{title}</h4>
-                <p className="text-brand-sage text-[12.8px] max-w-[240px] mx-auto leading-[1.55]">{desc}</p>
+                <h4 className="text-[15px] mb-2.5">{title}</h4>
+                <p className="text-brand-sage text-[12.8px] max-w-60 mx-auto leading-[1.55]">{desc}</p>
               </div>
             ))}
+          </div>
+          <div className="mt-10 flex items-start gap-3 bg-white border border-brand-line rounded-[14px] px-5 py-4 max-w-3xl mx-auto">
+            <svg className="shrink-0 mt-0.5 text-brand-olive" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p className="text-brand-sage text-[12.8px] leading-[1.6]">
+              <span className="text-brand-ink font-semibold">Important: </span>
+              We do not use machines randomly. Every modality is selected according to your condition, safety, contraindications, goals and therapist judgment.
+            </p>
           </div>
           <CTABanner title="Explore Our Tailored Treatments" subtitle="See the full catalogue of specialist physiotherapy modalities" buttonText="Explore Now" buttonHref="/treatments" />
         </div>
       </section>
 
       {/* ── Services ──────────────────────────────────────────────── */}
-      <section className="py-[70px] pt-[30px]">
-        <div className="max-w-[1180px] mx-auto px-7">
+      <section className="py-17.5 pt-7.5">
+        <div className="max-w-295 mx-auto px-7">
           <SectionHeader
             eyebrow="Care You Can Trust"
             title={<>Our <span className="font-serif italic font-normal text-brand-olive">Services</span></>}
             subtitle="Region-specific care plans for the conditions we see most often in our clinic."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[22px] mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5.5 mt-12">
             {services.map(({ label, title, desc }, i) => (
-              <div key={title} className="bg-white rounded-[16px] overflow-hidden border border-brand-line hover:-translate-y-[3px] hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                <div className={`aspect-[4/3] bg-gradient-to-br ${svcGradients[i % svcGradients.length]} relative`}>
+              <div key={title} className="bg-white rounded-[16px] overflow-hidden border border-brand-line hover:-translate-y-0.75 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
+                <div className={`aspect-4/3 bg-linear-to-br ${svcGradients[i % svcGradients.length]} relative`}>
                   <span className="absolute inset-0 grid place-items-center text-brand-ink/40 text-[11px] tracking-[0.2em] uppercase">{label}</span>
                 </div>
-                <div className="p-4 pb-[22px]">
+                <div className="p-4 pb-5.5">
                   <h4 className="text-[15px] mb-2">{title}</h4>
                   <p className="text-brand-sage text-[12.5px] leading-[1.55]">{desc}</p>
                 </div>
@@ -303,8 +308,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Team ──────────────────────────────────────────────────── */}
-      <section className="py-[70px] pt-5">
-        <div className="max-w-[1180px] mx-auto px-7">
+      <section className="py-17.5 pt-5">
+        <div className="max-w-295 mx-auto px-7">
           <div className="text-center mb-1">
             <span className="font-serif italic text-brand-olive text-[14px]">Our Team</span>
           </div>
@@ -314,8 +319,8 @@ export default function HomePage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-12">
             {team.map(({ name, role }, i) => (
-              <div key={name} className="bg-white border border-brand-line rounded-[16px] p-6 text-center hover:-translate-y-[3px] hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                <div className={`w-[140px] h-[140px] rounded-full mx-auto mb-4 relative overflow-hidden bg-gradient-to-b ${avatarGradients[i % avatarGradients.length]} shadow-[inset_0_-12px_20px_rgba(38,43,21,0.2)]`}>
+              <div key={name} className="bg-white border border-brand-line rounded-[16px] p-6 text-center hover:-translate-y-0.75 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
+                <div className={`w-35 h-35 rounded-full mx-auto mb-4 relative overflow-hidden bg-linear-to-b ${avatarGradients[i % avatarGradients.length]} shadow-[inset_0_-12px_20px_rgba(38,43,21,0.2)]`}>
                   <div className="absolute left-[25%] right-[25%] bottom-0 h-[50%] bg-brand-ink rounded-[50%_50%_0_0/30%_30%_0_0]" />
                 </div>
                 <h4 className="text-[17px] mb-1">{name}</h4>
@@ -328,30 +333,30 @@ export default function HomePage() {
       </section>
 
       {/* ── Why PhysioPath ────────────────────────────────────────── */}
-      <section className="py-[30px] pb-[60px]">
-        <div className="max-w-[1180px] mx-auto px-7">
+      <section className="py-7.5 pb-15">
+        <div className="max-w-295 mx-auto px-7">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-14 items-center">
             <div>
               <h2 className="text-[32px] mb-9">Why <span className="font-serif italic font-normal text-brand-olive">PhysioPath</span>?</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[30px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-7.5">
                 {whyItems.map(({ icon, title, desc }) => (
                   <div key={title}>
-                    <div className="w-[44px] h-[44px] rounded-full bg-brand-paper border border-brand-line grid place-items-center text-brand-olive mb-3">{icon}</div>
-                    <h4 className="text-[15px] mb-[6px]">{title}</h4>
+                    <div className="w-11 h-11 rounded-full bg-brand-paper border border-brand-line grid place-items-center text-brand-olive mb-3">{icon}</div>
+                    <h4 className="text-[15px] mb-1.5">{title}</h4>
                     <p className="text-brand-sage text-[12.8px] leading-[1.55]">{desc}</p>
                   </div>
                 ))}
               </div>
             </div>
             <div className="bg-brand-paper border border-brand-line rounded-[18px] p-10 grid place-items-center text-center">
-              <div className="w-[68px] h-[68px] rounded-[16px] bg-brand-ink grid place-items-center text-brand-mist mx-auto mb-4">
+              <div className="w-17 h-17 rounded-[16px] bg-brand-ink grid place-items-center text-brand-mist mx-auto mb-4">
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0L12 7.9 8.7 4.6c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l8.8 8.8 8.8-8.8c1.5-1.5 1.5-4 0-5.5Z"/>
                 </svg>
               </div>
               <div className="text-[24px] font-extrabold text-brand-ink tracking-[0.04em]">PHYSIOPATH</div>
               <div className="text-[10px] text-brand-sage tracking-[0.18em] mt-1 font-semibold">ROBOTICS & ADVANCED PHYSIOTHERAPY</div>
-              <div className="text-[10px] text-brand-olive tracking-[0.18em] mt-[14px] font-semibold border-t border-brand-line pt-[10px]">A UNIT OF PHYSIOBIC HEALTHCARE PVT LTD</div>
+              <div className="text-[10px] text-brand-olive tracking-[0.18em] mt-3.5 font-semibold border-t border-brand-line pt-2.5">A UNIT OF PHYSIOBIC HEALTHCARE PVT LTD</div>
             </div>
           </div>
         </div>

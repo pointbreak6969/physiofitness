@@ -194,7 +194,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 bg-brand-ink text-white rounded-full py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
             >
               <Phone size={14} />
-              Call Now: +91 88678 63637
+              Call Now: +977 9864430711
             </Link>
           </div>
         </div>

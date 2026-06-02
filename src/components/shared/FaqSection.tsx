@@ -33,16 +33,7 @@ export default function FaqSection({ faqs, dark }: FaqSectionProps) {
           dark={dark}
         />
 
-        {/* Search */}
-        <div className="mt-8 mb-9 max-w-[580px] mx-auto bg-white/[0.06] border border-brand-mist/25 rounded-full p-[6px] flex items-center gap-2">
-          <input
-            className="flex-1 bg-transparent border-0 outline-none text-white placeholder:text-brand-mist px-4 py-[10px] text-[14px] font-sans"
-            placeholder="Do I need a doctor's referral?"
-          />
-          <button className="bg-brand-olive text-white border-0 cursor-pointer px-4 py-[10px] rounded-full text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
-            Search
-          </button>
-        </div>
+        
 
         <div className="max-w-[780px] mx-auto grid gap-[10px]">
           {faqs.map(({ q, a }, i) => (
