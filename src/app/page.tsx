@@ -5,42 +5,42 @@ import FaqSection from "@/components/shared/FaqSection";
 
 const treatments = [
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h3l2-5 3 10 2-5 2 2.5h8"/><circle cx="4.5" cy="17" r="1.5"/><line x1="4.5" y1="15.5" x2="4.5" y2="13"/><circle cx="19.5" cy="17" r="1.5"/><line x1="19.5" y1="15.5" x2="19.5" y2="13"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 12h3l2-5 3 10 2-5 2 2.5h8" /><circle cx="4.5" cy="17" r="1.5" /><line x1="4.5" y1="15.5" x2="4.5" y2="13" /><circle cx="19.5" cy="17" r="1.5" /><line x1="19.5" y1="15.5" x2="19.5" y2="13" /></svg>,
     title: "TENS",
     desc: "May be used for pain modulation and comfort.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9c2.5 0 2.5 6 5 6s2.5-6 5-6 2.5 6 5 6 2.5-6 5-6"/><path d="M2 15c2.5 0 2.5-6 5-6s2.5 6 5 6 2.5-6 5-6 2.5 6 5 6" strokeOpacity="0.4"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M2 9c2.5 0 2.5 6 5 6s2.5-6 5-6 2.5 6 5 6 2.5-6 5-6" /><path d="M2 15c2.5 0 2.5-6 5-6s2.5 6 5 6 2.5-6 5-6 2.5 6 5 6" strokeOpacity="0.4" /></svg>,
     title: "IFT",
     desc: "Used in selected pain and soft-tissue conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L7 13h5l-1 9 7-11h-5z"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L7 13h5l-1 9 7-11h-5z" /></svg>,
     title: "EMS",
     desc: "Can support muscle activation when clinically appropriate.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="2" width="6" height="9" rx="3"/><path d="M12 11v3"/><path d="M9 17c0-1.7 1.3-3 3-3s3 1.3 3 3"/><path d="M6 19.5C6 17 8.7 15 12 15s6 2 6 4.5"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="9" y="2" width="6" height="9" rx="3" /><path d="M12 11v3" /><path d="M9 17c0-1.7 1.3-3 3-3s3 1.3 3 3" /><path d="M6 19.5C6 17 8.7 15 12 15s6 2 6 4.5" /></svg>,
     title: "Ultrasound",
     desc: "Used selectively for soft-tissue and pain-related conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="8 7 12 3 16 7"/><polyline points="8 17 12 21 16 17"/><line x1="5" y1="12" x2="19" y2="12"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="3" x2="12" y2="21" /><polyline points="8 7 12 3 16 7" /><polyline points="8 17 12 21 16 17" /><line x1="5" y1="12" x2="19" y2="12" /></svg>,
     title: "Traction",
     desc: "Cervical or lumbar traction only after screening and indication.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="2.5" /><path d="M12 2v3M12 19v3M2 12h3M19 12h3" /><path d="M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1" /></svg>,
     title: "ESWT / Laser",
     desc: "Advanced options for selected musculoskeletal conditions.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z"/><line x1="12" y1="9" x2="12" y2="13"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" /><line x1="12" y1="9" x2="12" y2="13" /></svg>,
     title: "Hydrocollator / Cold Packs",
     desc: "Heat and cold therapy for comfort and preparation.",
   },
   {
-    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" strokeDasharray="3 2"/><circle cx="12" cy="9" r="2.5"/><path d="M8 21v-3.5a4 4 0 0 1 8 0V21"/><line x1="8" y1="13" x2="16" y2="13"/></svg>,
+    icon: <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" strokeDasharray="3 2" /><circle cx="12" cy="9" r="2.5" /><path d="M8 21v-3.5a4 4 0 0 1 8 0V21" /><line x1="8" y1="13" x2="16" y2="13" /></svg>,
     title: "X-ray Screen / Assessment",
     desc: "Supports clinical interpretation with reports and referral documents.",
   },
@@ -90,45 +90,48 @@ const avatarGradients = [
 
 const whyItems = [
   {
-    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l3 7 7 .9-5 4.9 1.4 7L12 18.3 5.6 21.8 7 15l-5-4.9 7-.9 3-7Z"/></svg>,
-    title: "Expert Physiotherapists",
-    desc: "Senior, board-certified clinicians lead every case.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l3 7 7 .9-5 4.9 1.4 7L12 18.3 5.6 21.8 7 15l-5-4.9 7-.9 3-7Z" /></svg>,
+    title: "Assessment-Based Care",
+    desc: "We listen, observe your movement and identify your key limitations before any treatment begins.",
   },
   {
-    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z"/><path d="M12 7v5l3 2"/></svg>,
-    title: "Comprehensive Services",
-    desc: "Single roof for diagnosis, therapy and recovery monitoring.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0Z" /><path d="M12 7v5l3 2" /></svg>,
+    title: "Exercise Therapy",
+    desc: "Progressive exercise for strength, flexibility, endurance, balance and long-term confidence.",
   },
   {
-    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="4" y="6" width="16" height="12" rx="3"/><path d="M9 11h.01M15 11h.01M9 15h6M12 2v4"/></svg>,
-    title: "Robotics Assistance",
-    desc: "Sensor-driven equipment for precise, measurable rehab.",
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /><rect x="6" y="3" width="12" height="8" rx="2" /><path d="M8 12h8" /></svg>,
+    title: "Gym & Fitness Zone",
+    desc: "Supervised strength, cardio and mobility training for safe return to daily life and sport.",
   },
   {
-    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>,
+    icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="4" /><path d="M4 21a8 8 0 0 1 16 0" /></svg>,
     title: "Personalized Care",
-    desc: "Every plan is shaped around your goals and lifestyle.",
+    desc: "Every plan is shaped around your condition, safety, goals and lifestyle.",
   },
 ];
 
 const faqs = [
   {
-    q: "What conditions does PhysioPath treat?",
-    a: "We treat orthopaedic, neurological, paediatric, sports, and post-surgical conditions across the full age range. Our intake assessment determines fit and recommends the right pathway for you.",
+    q: "What conditions does PhysioFitness treat?",
+    a: "We help with back pain and sciatica, neck pain, shoulder and frozen shoulder, knee pain and arthritis, heel and ankle problems, sports injuries, stroke and neurological conditions, post-operative recovery, geriatric rehabilitation, work-related pain, posture problems, and safe return to fitness after injury.",
   },
   {
     q: "Do I need a doctor's referral?",
     a: "No referral is required. You can book directly and we'll perform a thorough assessment at your first visit.",
   },
   {
+    q: "What should I bring to my first appointment?",
+    a: "Please bring your doctor's prescription if available, any reports, X-ray or MRI scans, details of previous treatment, and comfortable clothing that allows easy movement.",
+  },
+  {
+    q: "Is exercise part of my treatment plan?",
+    a: "Yes. Exercise is central to recovery at PhysioFitness. It helps restore movement, improve strength, build balance and endurance, and gives you the tools to manage your recovery independently — beyond clinic visits.",
+  },
+  {
     q: "How long does each session last?",
     a: "Sessions typically run 45–60 minutes depending on the treatment plan and modality.",
   },
-  {
-    q: "What makes robotic physiotherapy different?",
-    a: "Robotic-assisted therapy provides precise force control, consistent intensity, and measurable progress data — especially useful for neurological and post-surgical patients.",
-  },
-
 ];
 
 export default function HomePage() {
@@ -150,18 +153,20 @@ export default function HomePage() {
             </div>
 
             <div className="order-1 lg:order-2">
+              <div className="inline-flex items-center gap-2 mb-4 bg-brand-paper border border-brand-line rounded-full px-3.5 py-1.5 text-[11px] font-semibold tracking-[0.14em] text-brand-olive uppercase">
+                Pain Relief · Rehabilitation · Fitness
+              </div>
               <h1 className="text-[40px] lg:text-[46px] leading-[1.08] tracking-[-0.02em] text-brand-ink mb-4.5">
-                Nepal's First  <br/>
-                 {/* <span className="font-serif italic font-normal text-brand-olive">Robotics</span>  */}
-                 and Advanced
-                <br className="hidden sm:block" /> Physiotherapy Clinic
-                <br className="hidden sm:block" /> in Pokhara
+                Nepal&apos;s First<br />
+                Advanced Physiotherapy
+                <br className="hidden sm:block" /> Clinic in Pokhara
               </h1>
-              <p className="text-brand-sage text-[15px] max-w-120 mb-5.5">
-               A modern physiotherapy, rehabilitation and supervised gym centre designed for
-              people who want to recover safely, rebuild strength and return to daily life with
-              confidence.
+              <p className="text-brand-sage text-[15px] max-w-120 mb-2">
+                A modern physiotherapy, rehabilitation and supervised gym centre designed for
+                people who want to recover safely, rebuild strength and return to daily life with
+                confidence.
               </p>
+              <p className="font-serif italic text-brand-olive text-[15px] mb-5.5">Move better. Feel stronger. Live more confidently.</p>
               <div className="flex items-center gap-3.5 mb-6.5">
                 <span className="text-brand-olive font-bold text-[22px]">5.0</span>
                 <span className="text-brand-olive text-[18px] tracking-widest">★★★★★</span>
@@ -171,8 +176,8 @@ export default function HomePage() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-brand-ink text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
               >
-                Book Your Consultation
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+                Book Your Assessment
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
               </Link>
             </div>
           </div>
@@ -208,8 +213,8 @@ export default function HomePage() {
             <div className="p-7 sm:p-8">
               <h4 className="text-[18px] mb-2">Book an <span className="text-brand-olive">Appointment</span></h4>
               <p className="text-brand-sage text-[13px] mb-4">Our care team is one call away — schedule your visit in under a minute.</p>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-5.5py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" /></svg>
                 Call Now
               </Link>
             </div>
@@ -234,12 +239,12 @@ export default function HomePage() {
                 About <span className="font-serif italic font-normal text-brand-olive">PhysioPath</span>
               </h2>
               <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">PhysioPath is a centre built around one simple belief: movement is medicine when it is guided, safe and
-personalized.</p>
+                personalized.</p>
               <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">At PhysioFitness Pain And Rehabilitation Centre, we combine physiotherapy assessment,
-evidence-informed treatment, modern modalities, progressive exercise and supervised gym
-training. Our goal is not only to reduce pain, but also to help you understand your condition,
-improve your movement, and build the confidence to stay active.</p>
-              <p className="text-brand-olive font-semibold text-[13.5px]">PhysioPath — rehabilation and advanced physiotherapy, Pokhara.</p>
+                evidence-informed treatment, modern modalities, progressive exercise and supervised gym
+                training. Our goal is not only to reduce pain, but also to help you understand your condition,
+                improve your movement, and build the confidence to stay active.</p>
+              <p className="text-brand-olive font-semibold text-[13.5px]">PhysioPath — pain relief, rehabilitation and fitness, Pokhara.</p>
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
@@ -272,7 +277,7 @@ improve your movement, and build the confidence to stay active.</p>
             ))}
           </div>
           <div className="mt-10 flex items-start gap-3 bg-white border border-brand-line rounded-[14px] px-5 py-4 max-w-3xl mx-auto">
-            <svg className="shrink-0 mt-0.5 text-brand-olive" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <svg className="shrink-0 mt-0.5 text-brand-olive" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><line x1="12" y1="8" x2="12" y2="12" /><line x1="12" y1="16" x2="12.01" y2="16" /></svg>
             <p className="text-brand-sage text-[12.8px] leading-[1.6]">
               <span className="text-brand-ink font-semibold">Important: </span>
               We do not use machines randomly. Every modality is selected according to your condition, safety, contraindications, goals and therapist judgment.
@@ -288,7 +293,7 @@ improve your movement, and build the confidence to stay active.</p>
           <SectionHeader
             eyebrow="Care You Can Trust"
             title={<>Our <span className="font-serif italic font-normal text-brand-olive">Services</span></>}
-            subtitle="Region-specific care plans for the conditions we see most often in our clinic."
+            subtitle="Complete care from pain relief to functional recovery."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5.5 mt-12">
             {services.map(({ label, title, desc }, i) => (
@@ -351,11 +356,11 @@ improve your movement, and build the confidence to stay active.</p>
             <div className="bg-brand-paper border border-brand-line rounded-[18px] p-10 grid place-items-center text-center">
               <div className="w-17 h-17 rounded-[16px] bg-brand-ink grid place-items-center text-brand-mist mx-auto mb-4">
                 <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0L12 7.9 8.7 4.6c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l8.8 8.8 8.8-8.8c1.5-1.5 1.5-4 0-5.5Z"/>
+                  <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0L12 7.9 8.7 4.6c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l8.8 8.8 8.8-8.8c1.5-1.5 1.5-4 0-5.5Z" />
                 </svg>
               </div>
               <div className="text-[24px] font-extrabold text-brand-ink tracking-[0.04em]">PHYSIOPATH</div>
-              <div className="text-[10px] text-brand-sage tracking-[0.18em] mt-1 font-semibold">ROBOTICS & ADVANCED PHYSIOTHERAPY</div>
+              <div className="text-[10px] text-brand-sage tracking-[0.18em] mt-1 font-semibold">PAIN RELIEF · REHABILITATION · FITNESS</div>
               <div className="text-[10px] text-brand-olive tracking-[0.18em] mt-3.5 font-semibold border-t border-brand-line pt-2.5">A UNIT OF PHYSIOBIC HEALTHCARE PVT LTD</div>
             </div>
           </div>

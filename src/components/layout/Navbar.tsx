@@ -28,8 +28,11 @@ export default function Navbar() {
 
   // Close menus on route change
   useEffect(() => {
-    setMobileOpen(false);
-    setCallOpen(false);
+    const handle = setTimeout(() => {
+      setMobileOpen(false);
+      setCallOpen(false);
+    }, 0);
+    return () => clearTimeout(handle);
   }, [pathname]);
 
   // Prevent body scroll when mobile menu is open

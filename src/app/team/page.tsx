@@ -52,7 +52,7 @@ export default function TeamPage() {
 
           {/* Row 2 — full portrait cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 max-w-[880px] mx-auto">
-            {row2.map(({ name, role, grad }, i) => {
+            {row2.map(({ name, role }, i) => {
               const portraitGrads = ["from-[#2f7929] to-[#9cdd15]", "from-[#7bc320] to-[#9cdd15]", "from-[#56a326] to-[#9cdd15]"];
               return (
                 <div key={name} className="bg-white border border-brand-line rounded-[16px] overflow-hidden hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">

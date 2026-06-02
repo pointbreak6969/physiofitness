@@ -31,26 +31,24 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="text-[22px] text-brand-ink mb-1">Phone</h4>
-                <p className="text-brand-sage text-[14.5px]">+91 88678 63637</p>
+                <p className="text-brand-sage text-[14.5px]">+977 9864430711</p>
               </div>
             </div>
           </div>
 
           {/* Address card */}
-          <div className="relative bg-brand-ink text-brand-paper rounded-[22px] px-12 py-14 max-w-[540px] overflow-hidden mb-9">
+          <div className="relative bg-brand-ink text-brand-paper rounded-[22px] px-6 py-8 sm:px-12 sm:py-14 max-w-[540px] overflow-hidden mb-9">
             <div className="absolute right-[-40px] top-[-40px] w-[200px] h-[200px] rounded-full bg-brand-mist/[0.06]" />
             <h3 className="text-white text-[30px] tracking-[-0.01em] mb-[18px] relative z-10">
               <span className="font-serif italic font-normal text-brand-mist">Our</span> Address
             </h3>
             <p className="text-brand-mist text-[15px] leading-[1.6] relative z-10">
-              Second Floor, 437/c, 5th Cross Rd,<br />
-              opp. BDA Complex, HBR Layout 2nd Block, 1st Stage,<br />
-              HBR Layout, Bengaluru, Karnataka — 560043.
+              Birauta-17, Pokhara
             </p>
           </div>
 
           {/* Contact form */}
-          <div className="bg-white rounded-[22px] border border-brand-line p-[56px_60px] mt-9">
+          <div className="bg-white rounded-[22px] border border-brand-line p-6 sm:p-[56px_60px] mt-9">
             <h2 className="text-[30px] tracking-[-0.01em] mb-2">
               Fill Contact Form{" "}
               <span className="font-serif italic font-normal text-brand-olive">To Reach Us.</span>{" "}
@@ -62,7 +60,7 @@ export default function ContactPage() {
 
           {/* Map placeholder */}
           <div
-            className="mt-12 rounded-[18px] overflow-hidden border border-brand-line aspect-[16/5] relative"
+            className="mt-12 rounded-[18px] overflow-hidden border border-brand-line aspect-[4/3] sm:aspect-[16/5] relative"
             style={{
               background: `
                 repeating-linear-gradient(0deg, transparent 0 60px, rgba(47,121,41,.12) 60px 61px),
@@ -71,7 +69,7 @@ export default function ContactPage() {
               `,
             }}
           >
-            <div
+            {/* <div
               className="absolute left-[52%] top-[42%] w-[38px] h-[38px] rounded-[50%_50%_50%_0] bg-brand-olive shadow-[0_10px_24px_-8px_rgba(38,43,21,0.5)] grid place-items-center"
               style={{ transform: "rotate(-45deg)" }}
             >
@@ -79,10 +77,18 @@ export default function ContactPage() {
             </div>
             <div className="absolute left-[50%] top-[58%] bg-white border border-brand-line px-[18px] py-[10px] rounded-full text-[13px] font-semibold text-brand-ink shadow-[0_8px_20px_-6px_rgba(38,43,21,0.25)]">
               PhysioPath · HBR Layout
-            </div>
+            </div> */}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.39856379568!2d83.9736332!3d28.195200999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595003dc815ab%3A0xbdfa1d91f44316e6!2sPhysioFitness%20Pain%20And%20Rehabilitation%20Centre!5e0!3m2!1sen!2snp!4v1780385376366!5m2!1sen!2snp"
+              className="w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
     </>
   );
 }
+  
