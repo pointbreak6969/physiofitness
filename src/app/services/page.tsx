@@ -14,16 +14,16 @@ const services = [
 ];
 
 const gradients = [
-  "from-[#2f7929] to-[#7bc320]",   // green
-  "from-[#56a326] to-[#9cdd15]",   // green
-  "from-[#56a326] to-[#9cdd15]",   // green
-  "from-[#2f7929] to-[#b1de5f]",   // green
-  "from-[#2f7929] to-[#9cdd15]",   // green
-  "from-[#7bc320] to-[#9cdd15]",   // green
-  "from-[#173913] to-[#7bc320]",   // green
-  "from-[#9cdd15] to-[#2f7929]",   // green
-  "from-[#7bc320] to-[#2f7929]",   // green
-  "from-[#2f7929] to-[#9cdd15]",   // green
+  "from-[#3a7a12] to-[#73c01a]",   // green
+  "from-[#4a8a15] to-[#8fd41a]",   // green
+  "from-[#4a8a15] to-[#8fd41a]",   // green
+  "from-[#3a7a12] to-[#a3d94a]",   // green
+  "from-[#3a7a12] to-[#8fd41a]",   // green
+  "from-[#73c01a] to-[#8fd41a]",   // green
+  "from-[#173913] to-[#73c01a]",   // green
+  "from-[#8fd41a] to-[#3a7a12]",   // green
+  "from-[#73c01a] to-[#3a7a12]",   // green
+  "from-[#3a7a12] to-[#8fd41a]",   // green
 ];
 
 export default function ServicesPage() {

@@ -1,16 +1,16 @@
 import PageBanner from "@/components/shared/PageBanner";
 
 const row1 = [
-  { name: "Dr. Adnan Shaikh", role: "Consultant Physiotherapist", sub: "Co-Founder & Director", grad: "from-[#2f7929] to-[#7bc320]" },
-  { name: "Waseem Khan", role: "Co-Founder & CEO", sub: "", grad: "from-[#7bc320] to-[#9cdd15]" },
-  { name: "Dr. Sayeda Nimra", role: "Clinical Physiotherapist", sub: "", grad: "from-[#56a326] to-[#9cdd15]" },
-  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist", sub: "", grad: "from-[#56a326] to-[#9cdd15]" },
+  { name: "Dr. Adnan Shaikh", role: "Consultant Physiotherapist", sub: "Co-Founder & Director", grad: "from-[#3a7a12] to-[#73c01a]" },
+  { name: "Waseem Khan", role: "Co-Founder & CEO", sub: "", grad: "from-[#73c01a] to-[#8fd41a]" },
+  { name: "Dr. Sayeda Nimra", role: "Clinical Physiotherapist", sub: "", grad: "from-[#4a8a15] to-[#8fd41a]" },
+  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist", sub: "", grad: "from-[#4a8a15] to-[#8fd41a]" },
 ];
 
 const row2 = [
-  { name: "Dr. Muqit PT", role: "Clinical Physiotherapist", grad: "from-[#2f7929] to-[#9cdd15]" },
-  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist", grad: "from-[#7bc320] to-[#9cdd15]" },
-  { name: "Dr. Saleena PT", role: "Clinical Physiotherapist", grad: "from-[#56a326] to-[#9cdd15]" },
+  { name: "Dr. Muqit PT", role: "Clinical Physiotherapist", grad: "from-[#3a7a12] to-[#8fd41a]" },
+  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist", grad: "from-[#73c01a] to-[#8fd41a]" },
+  { name: "Dr. Saleena PT", role: "Clinical Physiotherapist", grad: "from-[#4a8a15] to-[#8fd41a]" },
 ];
 
 export default function TeamPage() {
@@ -39,7 +39,7 @@ export default function TeamPage() {
             {row1.map(({ name, role, sub, grad }) => (
               <div key={name} className="bg-white border border-brand-line rounded-[16px] p-7 pb-[26px] text-center hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
                 <div className={`w-[150px] h-[150px] rounded-full mx-auto mb-[18px] relative overflow-hidden bg-gradient-to-b ${grad} shadow-[inset_0_-16px_24px_rgba(38,43,21,0.2)]`}>
-                  <div className="absolute top-[18%] left-[30%] w-[40%] h-[40%] rounded-full" style={{ background: "linear-gradient(180deg, #b1de5f, #7bc320)" }} />
+                  <div className="absolute top-[18%] left-[30%] w-[40%] h-[40%] rounded-full" style={{ background: "linear-gradient(180deg, #a3d94a, #73c01a)" }} />
                   <div className="absolute left-[20%] right-[20%] bottom-[-6%] h-[60%] bg-brand-ink rounded-[50%_50%_0_0/35%_35%_0_0]" />
                 </div>
                 <h4 className="text-[16px] mb-[6px]">{name}</h4>
@@ -53,7 +53,7 @@ export default function TeamPage() {
           {/* Row 2 — full portrait cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 max-w-[880px] mx-auto">
             {row2.map(({ name, role }, i) => {
-              const portraitGrads = ["from-[#2f7929] to-[#9cdd15]", "from-[#7bc320] to-[#9cdd15]", "from-[#56a326] to-[#9cdd15]"];
+              const portraitGrads = ["from-[#3a7a12] to-[#8fd41a]", "from-[#73c01a] to-[#8fd41a]", "from-[#4a8a15] to-[#8fd41a]"];
               return (
                 <div key={name} className="bg-white border border-brand-line rounded-[16px] overflow-hidden hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
                   <div className={`aspect-[1/1.05] bg-gradient-to-b ${portraitGrads[i % 3]} relative`}>

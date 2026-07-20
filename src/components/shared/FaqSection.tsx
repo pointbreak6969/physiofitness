@@ -51,10 +51,10 @@ export default function FaqSection({ faqs, dark }: FaqSectionProps) {
                 <span
                   className={`w-[28px] h-[28px] rounded-full flex-shrink-0 grid place-items-center font-bold text-[16px] transition-colors ${
                     open === i
-                      ? dark
+                      ?                       dark
                         ? "bg-brand-mist text-brand-ink"
-                        : "bg-brand-olive text-white"
-                      : "bg-brand-olive text-white"
+                        : "bg-brand-blue text-white"
+                      : "bg-brand-blue text-white"
                   }`}
                 >
                   {open === i ? "−" : "+"}

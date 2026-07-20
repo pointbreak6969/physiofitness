@@ -12,8 +12,8 @@ export default function PageBanner({ title, crumb }: PageBannerProps) {
       className="relative h-[260px] overflow-hidden"
       style={{
         background: `
-          linear-gradient(90deg, var(--brand-paper) 0%, var(--brand-paper) 40%, rgba(244,250,234,0) 80%),
-          linear-gradient(135deg, #b1de5f 0%, #7bc320 45%, #2f7929 100%)
+          linear-gradient(90deg, var(--brand-paper) 0%, var(--brand-paper) 40%, rgba(255,255,255,0) 80%),
+          linear-gradient(135deg, #a3d94a 0%, #73c01a 45%, #3a7a12 100%)
         `,
       }}
     >
@@ -23,7 +23,7 @@ export default function PageBanner({ title, crumb }: PageBannerProps) {
         style={{
           background: `
             radial-gradient(ellipse at 55% 35%, #edf9d8 0 14%, transparent 15%),
-            linear-gradient(180deg, #b1de5f 30%, #7bc320 60%, #2f7929 100%)
+            linear-gradient(180deg, #a3d94a 30%, #73c01a 60%, #3a7a12 100%)
           `,
           maskImage: "linear-gradient(90deg, transparent 0, #000 25%, #000 100%)",
           WebkitMaskImage: "linear-gradient(90deg, transparent 0, #000 25%, #000 100%)",

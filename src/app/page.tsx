@@ -58,16 +58,16 @@ const services = [
 ];
 
 const svcGradients = [
-  "from-[#2f7929] to-[#7bc320]",   // green
-  "from-[#7bc320] to-[#9cdd15]",   // green
-  "from-[#56a326] to-[#9cdd15]",   // green
-  "from-[#56a326] to-[#9cdd15]",   // green
-  "from-[#2f7929] to-[#b1de5f]",   // green
-  "from-[#2f7929] to-[#7bc320]",   // green
-  "from-[#7bc320] to-[#b1de5f]",   // green
-  "from-[#173913] to-[#9cdd15]",   // green
-  "from-[#56a326] to-[#b1de5f]",   // green
-  "from-[#2f7929] to-[#9cdd15]",   // green
+  "from-[#3a7a12] to-[#73c01a]",   // green
+  "from-[#73c01a] to-[#8fd41a]",   // green
+  "from-[#4a8a15] to-[#8fd41a]",   // green
+  "from-[#4a8a15] to-[#8fd41a]",   // green
+  "from-[#3a7a12] to-[#a3d94a]",   // green
+  "from-[#3a7a12] to-[#73c01a]",   // green
+  "from-[#73c01a] to-[#a3d94a]",   // green
+  "from-[#173913] to-[#8fd41a]",   // green
+  "from-[#4a8a15] to-[#a3d94a]",   // green
+  "from-[#3a7a12] to-[#8fd41a]",   // green
 ];
 
 const team = [
@@ -80,12 +80,12 @@ const team = [
 ];
 
 const avatarGradients = [
-  "from-[#b1de5f] to-[#2f7929]",   // green
-  "from-[#b1de5f] to-[#2f7929]",   // green
-  "from-[#b1de5f] to-[#7bc320]",   // green
-  "from-[#2f7929] to-[#7bc320]",   // green
-  "from-[#b1de5f] to-[#56a326]",   // green
-  "from-[#b1de5f] to-[#56a326]",   // green
+  "from-[#a3d94a] to-[#3a7a12]",   // green
+  "from-[#a3d94a] to-[#3a7a12]",   // green
+  "from-[#a3d94a] to-[#73c01a]",   // green
+  "from-[#3a7a12] to-[#73c01a]",   // green
+  "from-[#a3d94a] to-[#4a8a15]",   // green
+  "from-[#a3d94a] to-[#4a8a15]",   // green
 ];
 
 const whyItems = [
@@ -143,10 +143,10 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div
               className="aspect-4/3 rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
-              style={{ background: "radial-gradient(ellipse at 30% 40%, #b1de5f 0%, #9cdd15 45%, #56a326 100%)" }}
+              style={{ background: "radial-gradient(ellipse at 30% 40%, #a3d94a 0%, #8fd41a 45%, #4a8a15 100%)" }}
             >
               <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(23,57,19,.15) 100%)" }} />
-              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -10px 30px rgba(23,57,19,.25)" }} />
+              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #a3d94a, #3a7a12)", boxShadow: "inset 0 -10px 30px rgba(23,57,19,.25)" }} />
               <span className="absolute left-4.5 top-4.5 bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-1.5 rounded-full uppercase backdrop-blur-sm">
                 Our Clinic
               </span>
@@ -174,7 +174,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-brand-ink text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
+                className="inline-flex items-center gap-2 bg-brand-blue text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:opacity-90 transition-opacity"
               >
                 Book Your Assessment
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M13 5l7 7-7 7" /></svg>
@@ -213,7 +213,7 @@ export default function HomePage() {
             <div className="p-7 sm:p-8">
               <h4 className="text-[18px] mb-2">Book an <span className="text-brand-olive">Appointment</span></h4>
               <p className="text-brand-sage text-[13px] mb-4">Our care team is one call away — schedule your visit in under a minute.</p>
-              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-olive text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:bg-[#56a326] transition-colors">
+              <Link href="/contact" className="inline-flex items-center gap-2 bg-brand-blue text-white rounded-full px-5.5 py-3 text-[13px] font-semibold hover:opacity-90 transition-opacity">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z" /></svg>
                 Call Now
               </Link>
@@ -248,9 +248,9 @@ export default function HomePage() {
             </div>
             <div
               className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #b1de5f, #2f7929 80%)" }}
+              style={{ background: "radial-gradient(circle at 35% 30%, #a3d94a, #3a7a12 80%)" }}
             >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-lg" style={{ background: "linear-gradient(180deg, #b1de5f, #2f7929)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
+              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-lg" style={{ background: "linear-gradient(180deg, #a3d94a, #3a7a12)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
               <div className="absolute left-0 right-0 bottom-[30%] h-1.5 bg-brand-ink" />
             </div>
           </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Phone, X, Menu, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-
+import Image from "next/image";
 const phoneNumbers = [
   { label: "Main Clinic", number: "+91 88678 63637", href: "tel:+918867863637" },
   { label: "Alternate", number: "+91 99001 12345", href: "tel:+919900112345" },
@@ -57,18 +57,8 @@ export default function Navbar() {
     <nav className="bg-brand-paper border-b border-brand-line sticky top-0 z-40">
       <div className="max-w-[1180px] mx-auto px-7 flex items-center justify-between h-[76px]">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-[10px] text-brand-ink font-extrabold tracking-[0.02em]">
-          <span className="w-[38px] h-[38px] rounded-[10px] bg-brand-ink grid place-items-center text-brand-mist flex-shrink-0">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0L12 7.9 8.7 4.6c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l8.8 8.8 8.8-8.8c1.5-1.5 1.5-4 0-5.5Z" />
-            </svg>
-          </span>
-          <span className="text-[17px] leading-tight">
-            PHYSIOPATH
-            <small className="block text-[8.5px] text-brand-sage font-semibold tracking-[0.18em] mt-[-2px]">
-              ROBOTICS PHYSIO
-            </small>
-          </span>
+        <Link href="/" className="flex items-center gap-[10px]  font-extrabold tracking-[0.02em]">
+          <Image src="/asdf.png" alt="PhysioPath Robotics Physio" height={20} width={200} unoptimized className="object-contain height-auto width-auto"/> 
         </Link>
 
         {/* Desktop nav */}
@@ -93,7 +83,7 @@ export default function Navbar() {
           <div ref={callRef} className="relative">
             <button
               onClick={() => setCallOpen((v) => !v)}
-              className="inline-flex items-center gap-[6px] bg-brand-ink text-white rounded-full px-[18px] py-[10px] text-[13px] font-semibold hover:bg-brand-olive transition-colors"
+              className="inline-flex items-center gap-[6px] bg-brand-blue text-white rounded-full px-[18px] py-[10px] text-[13px] font-semibold hover:opacity-90 transition-opacity"
             >
               <Phone size={14} />
               Call Now
@@ -194,7 +184,7 @@ export default function Navbar() {
           >
             <Link
               href="/contact"
-              className="flex items-center justify-center gap-2 bg-brand-ink text-white rounded-full py-3 text-[13px] font-semibold hover:bg-brand-olive transition-colors"
+              className="flex items-center justify-center gap-2 bg-brand-blue text-white rounded-full py-3 text-[13px] font-semibold hover:opacity-90 transition-opacity"
             >
               <Phone size={14} />
               Call Now: +977 9864430711

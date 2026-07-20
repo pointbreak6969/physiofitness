@@ -46,7 +46,7 @@ export default async function DashboardPage() {
       <header className="bg-white border-b border-border/60 sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-brand-olive grid place-items-center">
+            <div className="w-8 h-8 rounded-lg bg-brand-blue grid place-items-center">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               </svg>
@@ -87,7 +87,7 @@ export default async function DashboardPage() {
               <CardTitle className="text-sm font-medium text-muted-foreground">Today</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-4xl font-bold text-brand-olive">
+              <p className="text-4xl font-bold text-brand-blue">
                 {rows.filter((r) => {
                   const d = new Date(r.created_at);
                   const now = new Date();

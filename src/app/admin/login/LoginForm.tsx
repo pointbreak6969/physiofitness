@@ -16,7 +16,7 @@ export default function LoginForm() {
     <Card className="w-full shadow-xl border-0 ring-1 ring-border/60">
       <CardHeader className="space-y-1 pb-6">
         <div className="flex items-center gap-3 mb-2">
-          <div className="w-9 h-9 rounded-lg bg-brand-olive grid place-items-center">
+          <div className="w-9 h-9 rounded-lg bg-brand-blue grid place-items-center">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
@@ -59,7 +59,7 @@ export default function LoginForm() {
           <Button
             type="submit"
             disabled={isPending}
-            className="w-full bg-brand-olive hover:bg-brand-olive/90 text-white mt-2"
+            className="w-full bg-brand-blue hover:bg-brand-blue/90 text-white mt-2"
           >
             {isPending ? "Signing in…" : "Sign In"}
           </Button>
