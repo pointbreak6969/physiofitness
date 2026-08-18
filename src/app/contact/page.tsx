@@ -19,7 +19,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="text-[22px] text-brand-ink mb-1">Email</h4>
-                <p className="text-brand-sage text-[14.5px]">care@physiopath.in</p>
+                <p className="text-brand-sage text-[14.5px]">physiofitnesspain@gmail.com</p>
               </div>
             </div>
 
@@ -31,7 +31,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h4 className="text-[22px] text-brand-ink mb-1">Phone</h4>
-                <p className="text-brand-sage text-[14.5px]">+977 9864430711</p>
+                <p className="text-brand-sage text-[14.5px]">+977 061-451237</p>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
               <div className="w-[14px] h-[14px] rounded-full bg-white" />
             </div>
             <div className="absolute left-[50%] top-[58%] bg-white border border-brand-line px-[18px] py-[10px] rounded-full text-[13px] font-semibold text-brand-ink shadow-[0_8px_20px_-6px_rgba(38,43,21,0.25)]">
-              PhysioPath · HBR Layout
+              Physiofitness · HBR Layout
             </div> */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.39856379568!2d83.9736332!3d28.195200999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595003dc815ab%3A0xbdfa1d91f44316e6!2sPhysioFitness%20Pain%20And%20Rehabilitation%20Centre!5e0!3m2!1sen!2snp!4v1780385376366!5m2!1sen!2snp"

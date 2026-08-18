@@ -21,9 +21,12 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "PhysioPath — Robotics & Advanced Physiotherapy",
+  title: "Physiofitness | Physiotherapy, Rehabilitation & Fitness in Pokhara",
   description:
-    "A leading robotics and advanced physiotherapy clinic in Bangalore, blending evidence-based protocols with cutting-edge tech to get you back to what you love.",
+    "Assessment-led physiotherapy, rehabilitation and supervised fitness in Birauta-17, Pokhara. Services include manual therapy, therapeutic exercise, pain management and personalised recovery plans.",
+  icons: {
+    icon: "/asdf.png",
+  },
 };
 
 export default async function RootLayout({

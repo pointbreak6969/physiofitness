@@ -6,15 +6,14 @@ import { Phone, X, Menu, ChevronDown } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 const phoneNumbers = [
-  { label: "Main Clinic", number: "+91 88678 63637", href: "tel:+918867863637" },
-  { label: "Alternate", number: "+91 99001 12345", href: "tel:+919900112345" },
+  { label: "Main Clinic", number: "061-451237", href: "tel:+977061451237" },
+  
 ];
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/treatments", label: "Treatments" },
-  { href: "/services", label: "Services" },
   { href: "/team", label: "Our Team" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact Us" },
@@ -58,7 +57,7 @@ export default function Navbar() {
       <div className="max-w-[1180px] mx-auto px-7 flex items-center justify-between h-[76px]">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-[10px]  font-extrabold tracking-[0.02em]">
-          <Image src="/asdf.png" alt="PhysioPath Robotics Physio" height={20} width={200} unoptimized className="object-contain height-auto width-auto"/> 
+          <Image src="/asdf.png" alt="Physiofitness Robotics Physio" height={20} width={200} unoptimized className="object-contain height-auto width-auto"/> 
         </Link>
 
         {/* Desktop nav */}
@@ -187,7 +186,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 bg-brand-blue text-white rounded-full py-3 text-[13px] font-semibold hover:opacity-90 transition-opacity"
             >
               <Phone size={14} />
-              Call Now: +977 9864430711
+              Call Now: +977 061-451237
             </Link>
           </div>
         </div>

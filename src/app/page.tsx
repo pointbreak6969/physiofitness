@@ -2,6 +2,7 @@ import Link from "next/link";
 import SectionHeader from "@/components/shared/SectionHeader";
 import CTABanner from "@/components/shared/CTABanner";
 import FaqSection from "@/components/shared/FaqSection";
+import Image from "next/image";
 
 const treatments = [
   {
@@ -47,14 +48,14 @@ const treatments = [
 ];
 
 const services = [
-  { label: "Assessment", title: "Assessment & Planning", desc: "Detailed assessment and personalised treatment planning tailored to your condition." },
-  { label: "Manual", title: "Manual Therapy", desc: "Manual therapy and joint mobilization applied when clinically indicated." },
-  { label: "Exercise", title: "Therapeutic Exercise", desc: "Structured mobility, stretching, strengthening and balance programmes." },
-  { label: "Posture", title: "Posture & Ergonomics", desc: "Posture correction and ergonomic advice for work and daily life." },
-  { label: "Education", title: "Pain Education", desc: "Pain education and self-management strategies to build long-term confidence." },
-  { label: "Home Plan", title: "Home Exercise Program", desc: "Take-home exercise program with clear, step-by-step instructions." },
-  { label: "Monitoring", title: "Progress Monitoring", desc: "Regular review and plan modification as your condition evolves." },
-  { label: "Referral", title: "Referral Guidance", desc: "Referral guidance when red flags or medical concerns are suspected." },
+  { label: "Assessment", title: "Assessment & Planning", desc: "Detailed assessment and personalised treatment planning tailored to your condition.", image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?w=900&q=60&auto=format&fit=crop" },
+  { label: "Manual", title: "Manual Therapy", desc: "Manual therapy and joint mobilization applied when clinically indicated.", image: "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=900&q=60&auto=format&fit=crop" },
+  { label: "Exercise", title: "Therapeutic Exercise", desc: "Structured mobility, stretching, strengthening and balance programmes.", image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=900&q=60&auto=format&fit=crop" },
+  { label: "Posture", title: "Posture & Ergonomics", desc: "Posture correction and ergonomic advice for work and daily life.", image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=900&q=60&auto=format&fit=crop" },
+  { label: "Education", title: "Pain Education", desc: "Pain education and self-management strategies to build long-term confidence.", image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=60&auto=format&fit=crop" },
+  { label: "Home Plan", title: "Home Exercise Program", desc: "Take-home exercise program with clear, step-by-step instructions.", image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=900&q=60&auto=format&fit=crop" },
+  { label: "Monitoring", title: "Progress Monitoring", desc: "Regular review and plan modification as your condition evolves.", image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=900&q=60&auto=format&fit=crop" },
+  { label: "Referral", title: "Referral Guidance", desc: "Referral guidance when red flags or medical concerns are suspected.", image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=900&q=60&auto=format&fit=crop" },
 ];
 
 const svcGradients = [
@@ -71,21 +72,8 @@ const svcGradients = [
 ];
 
 const team = [
-  { name: "Dr. Adnan Shaikh", role: "Consultant Physiotherapist · Co-Founder & Director" },
-  { name: "Waseem Khan", role: "Co-Founder & CEO" },
-  { name: "Dr. Saleena PT", role: "Consultant Physiotherapist" },
-  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist" },
-  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist" },
-  { name: "Dr. Muqit PT", role: "Clinical Physiotherapist" },
-];
-
-const avatarGradients = [
-  "from-[#a3d94a] to-[#3a7a12]",   // green
-  "from-[#a3d94a] to-[#3a7a12]",   // green
-  "from-[#a3d94a] to-[#73c01a]",   // green
-  "from-[#3a7a12] to-[#73c01a]",   // green
-  "from-[#a3d94a] to-[#4a8a15]",   // green
-  "from-[#a3d94a] to-[#4a8a15]",   // green
+  { name: "Dr. Prakat Khanal", role: "Co-Founder & Physiotherapist", image: "/teammember1.jpg" },
+  { name: "Yuddha Baral", role: "Co-Founder & Head of Management", image: "/teammember2.jpg" },
 ];
 
 const whyItems = [
@@ -145,11 +133,14 @@ export default function HomePage() {
               className="aspect-4/3 rounded-[18px] relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.35)] order-2 lg:order-1"
               style={{ background: "radial-gradient(ellipse at 30% 40%, #a3d94a 0%, #8fd41a 45%, #4a8a15 100%)" }}
             >
-              <div className="absolute inset-0" style={{ background: "radial-gradient(120px 60px at 38% 55%, rgba(200,230,255,.55), transparent 70%), linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(23,57,19,.15) 100%)" }} />
-              <div className="absolute left-[8%] right-[8%] bottom-[14%] h-[32%] rounded-[14px]" style={{ background: "linear-gradient(180deg, #a3d94a, #3a7a12)", boxShadow: "inset 0 -10px 30px rgba(23,57,19,.25)" }} />
-              <span className="absolute left-4.5 top-4.5 bg-brand-ink/80 text-brand-paper text-[11px] font-semibold tracking-[0.12em] px-3 py-1.5 rounded-full uppercase backdrop-blur-sm">
-                Our Clinic
-              </span>
+              <Image
+                src="/about.jpg"
+                alt="PhysioFitness clinic"
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover"
+                priority
+              />
             </div>
 
             <div className="order-1 lg:order-2">
@@ -236,22 +227,24 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-3.5 items-center">
             <div>
               <h2 className="text-[30px] mb-4.5">
-                About <span className="font-serif italic font-normal text-brand-olive">PhysioPath</span>
+                About <span className="font-serif italic font-normal text-brand-olive">Physiofitness</span>
               </h2>
-              <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">PhysioPath is a centre built around one simple belief: movement is medicine when it is guided, safe and
+              <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">Physiofitness is a centre built around one simple belief: movement is medicine when it is guided, safe and
                 personalized.</p>
               <p className="text-[#3f3f3f] text-[14.5px] mb-3.5">At PhysioFitness Pain And Rehabilitation Centre, we combine physiotherapy assessment,
                 evidence-informed treatment, modern modalities, progressive exercise and supervised gym
                 training. Our goal is not only to reduce pain, but also to help you understand your condition,
                 improve your movement, and build the confidence to stay active.</p>
-              <p className="text-brand-olive font-semibold text-[13.5px]">PhysioPath — pain relief, rehabilitation and fitness, Pokhara.</p>
+              <p className="text-brand-olive font-semibold text-[13.5px]">Physiofitness — pain relief, rehabilitation and fitness, Pokhara.</p>
             </div>
-            <div
-              className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]"
-              style={{ background: "radial-gradient(circle at 35% 30%, #a3d94a, #3a7a12 80%)" }}
-            >
-              <div className="absolute left-[12%] right-[12%] top-[30%] bottom-[18%] rounded-lg" style={{ background: "linear-gradient(180deg, #a3d94a, #3a7a12)", boxShadow: "inset 0 -20px 30px rgba(23,57,19,.2)" }} />
-              <div className="absolute left-0 right-0 bottom-[30%] h-1.5 bg-brand-ink" />
+            <div className="aspect-square rounded-full relative overflow-hidden shadow-[0_30px_60px_-30px_rgba(38,43,21,0.4)]">
+              <Image
+                src="/clinic.jpg"
+                alt="PhysioFitness clinic"
+                fill
+                sizes="(min-width: 1024px) 30vw, 90vw"
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -296,10 +289,10 @@ export default function HomePage() {
             subtitle="Complete care from pain relief to functional recovery."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5.5 mt-12">
-            {services.map(({ label, title, desc }, i) => (
+            {services.map(({ title, desc, image }, i) => (
               <div key={title} className="bg-white rounded-[16px] overflow-hidden border border-brand-line hover:-translate-y-0.75 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                <div className={`aspect-4/3 bg-linear-to-br ${svcGradients[i % svcGradients.length]} relative`}>
-                  <span className="absolute inset-0 grid place-items-center text-brand-ink/40 text-[11px] tracking-[0.2em] uppercase">{label}</span>
+                <div className={`aspect-4/3 ${svcGradients[i % svcGradients.length]} relative`}>
+                  <Image src={image} alt={title} fill sizes="(min-width: 1024px) 25vw, 50vw" className="object-cover" />
                 </div>
                 <div className="p-4 pb-5.5">
                   <h4 className="text-[15px] mb-2">{title}</h4>
@@ -308,7 +301,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <CTABanner title="Discover Our Comprehensive Services" subtitle="See every condition we treat and how we approach it" buttonText="Discover Now" buttonHref="/services" />
+          <CTABanner title="Discover Our Comprehensive Services" subtitle="See every condition we treat and how we approach it" buttonText="Discover Now" buttonHref="/treatments" />
         </div>
       </section>
 
@@ -322,11 +315,11 @@ export default function HomePage() {
             title={<>Meet our Expert <span className="font-serif italic font-normal text-brand-olive">Physiotherapists</span></>}
             subtitle="Senior clinicians with decades of combined experience and a deep commitment to personalised care."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-12">
-            {team.map(({ name, role }, i) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-7 mt-12">
+            {team.map(({ name, role, image }) => (
               <div key={name} className="bg-white border border-brand-line rounded-[16px] p-6 text-center hover:-translate-y-0.75 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                <div className={`w-35 h-35 rounded-full mx-auto mb-4 relative overflow-hidden bg-linear-to-b ${avatarGradients[i % avatarGradients.length]} shadow-[inset_0_-12px_20px_rgba(38,43,21,0.2)]`}>
-                  <div className="absolute left-[25%] right-[25%] bottom-0 h-[50%] bg-brand-ink rounded-[50%_50%_0_0/30%_30%_0_0]" />
+                <div className="w-35 h-35 rounded-full mx-auto mb-4 relative overflow-hidden shadow-[inset_0_-12px_20px_rgba(38,43,21,0.2)]">
+                  <Image src={image} alt={name} fill sizes="140px" className="object-cover" />
                 </div>
                 <h4 className="text-[17px] mb-1">{name}</h4>
                 <p className="text-brand-sage text-[12.5px]">{role}</p>
@@ -337,12 +330,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Why PhysioPath ────────────────────────────────────────── */}
+      {/* ── Why Physiofitness ────────────────────────────────────────── */}
       <section className="py-7.5 pb-15">
         <div className="max-w-295 mx-auto px-7">
           <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_1fr] gap-14 items-center">
             <div>
-              <h2 className="text-[32px] mb-9">Why <span className="font-serif italic font-normal text-brand-olive">PhysioPath</span>?</h2>
+              <h2 className="text-[32px] mb-9">Why <span className="font-serif italic font-normal text-brand-olive">Physiofitness</span>?</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-7.5">
                 {whyItems.map(({ icon, title, desc }) => (
                   <div key={title}>
@@ -359,7 +352,7 @@ export default function HomePage() {
                   <path d="M20.8 4.6c-1.5-1.5-4-1.5-5.5 0L12 7.9 8.7 4.6c-1.5-1.5-4-1.5-5.5 0s-1.5 4 0 5.5l8.8 8.8 8.8-8.8c1.5-1.5 1.5-4 0-5.5Z" />
                 </svg>
               </div>
-              <div className="text-[24px] font-extrabold text-brand-ink tracking-[0.04em]">PHYSIOPATH</div>
+              <div className="text-[24px] font-extrabold text-brand-ink tracking-[0.04em]">Physiofitness</div>
               <div className="text-[10px] text-brand-sage tracking-[0.18em] mt-1 font-semibold">PAIN RELIEF · REHABILITATION · FITNESS</div>
               <div className="text-[10px] text-brand-olive tracking-[0.18em] mt-3.5 font-semibold border-t border-brand-line pt-2.5">A UNIT OF PHYSIOBIC HEALTHCARE PVT LTD</div>
             </div>

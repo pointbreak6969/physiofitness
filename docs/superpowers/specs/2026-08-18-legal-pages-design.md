@@ -10,7 +10,7 @@ Add three static legal informational pages — Privacy Policy, Terms & Condition
   - PhysioFitness, A Unit of Physiobic Healthcare Pvt Ltd
   - Birauta-17, Pokhara 33700, Nepal (uses +977 phone)
   - Email: physiofitnesspain@gmail.com
-  - Phone: +977 9864430711
+  - Phone: +977 061-451237
   - Hours: Mon — Sat · 07:00 – 21:00
 
 ## Routes & Pages

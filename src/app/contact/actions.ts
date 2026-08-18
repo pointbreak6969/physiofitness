@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
+import { getDb } from "@/lib/connectDb";
 
 export type ContactFormState =
   | { status: "idle" }
@@ -17,13 +17,21 @@ export async function submitContactForm(
   const subject = formData.get("subject") as string;
   const message = formData.get("message") as string;
 
-  const supabase = await createClient();
-  const { error } = await supabase
-    .from("Contacts")
-    .insert([{ name, email, number, subject, message }]);
-
-  if (error) {
-    return { status: "error", message: error.message };
+  try {
+    const db = await getDb();
+    await db.collection("contacts").insertOne({
+      name,
+      email,
+      number,
+      subject,
+      message,
+      created_at: new Date().toISOString(),
+    });
+  } catch (err) {
+    return {
+      status: "error",
+      message: err instanceof Error ? err.message : "Failed to submit the form.",
+    };
   }
 
   return { status: "success" };

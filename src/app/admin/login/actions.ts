@@ -1,6 +1,6 @@
 "use server";
 
-import { createClient } from "@/lib/supabase/server";
+import { getDb } from "@/lib/connectDb";
 import { signSession, SESSION_COOKIE } from "@/lib/session";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
@@ -20,25 +20,19 @@ export async function adminLogin(
     return { status: "error", message: "All fields are required." };
   }
 
-  const supabase = await createClient();
-  const { data: admins, error } = await supabase
-    .from("admin")
-    .select("id, email, password")
-    .eq("email", email)
-    .limit(1);
+  const db = await getDb();
+  const admin = await db.collection("admins").findOne({ email });
 
-  if (error || !admins || admins.length === 0) {
+  if (!admin) {
     return { status: "error", message: "Invalid email." };
   }
-
-  const admin = admins[0];
 
   if (admin.password !== password) {
     return { status: "error", message: "Invalid password." };
   }
 
   const token = await signSession({
-    id: admin.id,
+    id: admin._id.toString(),
     email: admin.email,
     exp: Date.now() + 1000 * 60 * 60 * 8, // 8 hours
   });

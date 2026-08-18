@@ -1,16 +1,9 @@
+import Image from "next/image";
 import PageBanner from "@/components/shared/PageBanner";
 
-const row1 = [
-  { name: "Dr. Adnan Shaikh", role: "Consultant Physiotherapist", sub: "Co-Founder & Director", grad: "from-[#3a7a12] to-[#73c01a]" },
-  { name: "Waseem Khan", role: "Co-Founder & CEO", sub: "", grad: "from-[#73c01a] to-[#8fd41a]" },
-  { name: "Dr. Sayeda Nimra", role: "Clinical Physiotherapist", sub: "", grad: "from-[#4a8a15] to-[#8fd41a]" },
-  { name: "Dr. Alfiya Khan PT", role: "Clinical Physiotherapist", sub: "", grad: "from-[#4a8a15] to-[#8fd41a]" },
-];
-
-const row2 = [
-  { name: "Dr. Muqit PT", role: "Clinical Physiotherapist", grad: "from-[#3a7a12] to-[#8fd41a]" },
-  { name: "Dr. Aarthi Chauhan PT", role: "Clinical Physiotherapist", grad: "from-[#73c01a] to-[#8fd41a]" },
-  { name: "Dr. Saleena PT", role: "Clinical Physiotherapist", grad: "from-[#4a8a15] to-[#8fd41a]" },
+const team = [
+  { name: "Dr. Prakat Khanal", role: "Co-Founder & Physiotherapist", image: "/teammember1.jpg" },
+  { name: "Yuddha Baral", role: "Co-Founder & Head of Management", image: "/teammember2.jpg" },
 ];
 
 export default function TeamPage() {
@@ -34,42 +27,17 @@ export default function TeamPage() {
             <p className="text-brand-sage text-[14.5px]">Senior clinicians with decades of combined experience, all under one roof. Specialisations span sports, neuro, paediatric and chronic-pain physiotherapy.</p>
           </div>
 
-          {/* Row 1 — circular avatars */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-7 mb-8">
-            {row1.map(({ name, role, sub, grad }) => (
+          {/* Team — circular avatars */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-7 max-w-[760px] mx-auto">
+            {team.map(({ name, role, image }) => (
               <div key={name} className="bg-white border border-brand-line rounded-[16px] p-7 pb-[26px] text-center hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                <div className={`w-[150px] h-[150px] rounded-full mx-auto mb-[18px] relative overflow-hidden bg-gradient-to-b ${grad} shadow-[inset_0_-16px_24px_rgba(38,43,21,0.2)]`}>
-                  <div className="absolute top-[18%] left-[30%] w-[40%] h-[40%] rounded-full" style={{ background: "linear-gradient(180deg, #a3d94a, #73c01a)" }} />
-                  <div className="absolute left-[20%] right-[20%] bottom-[-6%] h-[60%] bg-brand-ink rounded-[50%_50%_0_0/35%_35%_0_0]" />
+                <div className="w-[150px] h-[150px] rounded-full mx-auto mb-[18px] relative overflow-hidden shadow-[inset_0_-16px_24px_rgba(38,43,21,0.2)]">
+                  <Image src={image} alt={name} fill sizes="150px" className="object-cover" />
                 </div>
                 <h4 className="text-[16px] mb-[6px]">{name}</h4>
-                <p className="text-brand-sage text-[13px]">
-                  {sub ? <><strong className="text-brand-ink font-semibold">{role}</strong><br />{sub}</> : role}
-                </p>
+                <p className="text-brand-sage text-[13px]">{role}</p>
               </div>
             ))}
-          </div>
-
-          {/* Row 2 — full portrait cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-7 max-w-[880px] mx-auto">
-            {row2.map(({ name, role }, i) => {
-              const portraitGrads = ["from-[#3a7a12] to-[#8fd41a]", "from-[#73c01a] to-[#8fd41a]", "from-[#4a8a15] to-[#8fd41a]"];
-              return (
-                <div key={name} className="bg-white border border-brand-line rounded-[16px] overflow-hidden hover:-translate-y-1 hover:shadow-[0_22px_44px_-22px_rgba(38,43,21,0.25)] transition-[transform,box-shadow] duration-200">
-                  <div className={`aspect-[1/1.05] bg-gradient-to-b ${portraitGrads[i % 3]} relative`}>
-                    <div
-                      className="absolute inset-0"
-                      style={{ background: "radial-gradient(circle at 50% 30%, #f0eddc 0 22%, transparent 23%), linear-gradient(180deg, transparent 40%, var(--brand-ink) 95%)" }}
-                    />
-                    <span className="absolute inset-0 grid place-items-center text-white/45 text-[10.5px] tracking-[0.22em] uppercase">Portrait</span>
-                  </div>
-                  <div className="px-[22px] py-[18px] pb-[26px] text-center">
-                    <h4 className="text-[16px] mb-[6px]">{name}</h4>
-                    <p className="text-brand-sage text-[13px]">{role}</p>
-                  </div>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>

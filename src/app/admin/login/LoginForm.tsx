@@ -21,7 +21,7 @@ export default function LoginForm() {
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
           </div>
-          <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">PhysioPath</span>
+          <span className="text-xs font-semibold tracking-widest text-muted-foreground uppercase">Physiofitness</span>
         </div>
         <CardTitle className="text-2xl font-bold tracking-tight">Admin Portal</CardTitle>
         <CardDescription>Sign in to access the dashboard</CardDescription>
